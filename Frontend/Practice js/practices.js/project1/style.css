@@ -1,0 +1,30 @@
+body {
+  background-color: silver;
+}
+
+.div {
+  width: 50%;
+  margin:  auto;
+}
+
+.button {
+  border: 1px solid;
+  padding: 80px;
+  margin: 10px;
+}
+
+#grey {
+  background-color: grey;
+}
+
+#cadetblue {
+  background-color: cadetblue;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow {
+  background-color: yellow;
+}

@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <title>Navbar Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="m-auto">
+    <header>
+        <!-- <div class="container-fluid"> -->
+
+        <!-- TOP NAVBAR (Contact + Social) -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom py-2">
+            <div class="container-fluid">
+                <div class="d-flex d-md-none justify-content-center mb-2">
+                    <a href="mailto:faizandevx@gmail.com" class="text-decoration-none fw-semibold"
+                        style="color: #0a165e;">
+                        faizandevx@gmail.com
+                    </a>
+                </div>
+                <!-- Toggler for top navbar -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topbarMenu"
+                    aria-controls="topbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Left: Contact Info -->
+                <div class="collapse navbar-collapse" id="topbarMenu">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <!-- Phone -->
+                        <li class="nav-item d-flex align-items-center pe-5 border-end border-2 border-dark"
+                            style="color: #0a165e;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-telephone-fill me-1" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                            </svg>
+                            <a href="#" class="text-decoration-none bg-text-color"
+                                style="color: #0a165e;">+923473057550</a>
+                        </li>
+
+                        <!-- Email -->
+                        <li class="nav-item d-flex align-items-center px-5 border-end border-2 border-dark"
+                            style="color: #0a165e;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-envelope-fill me-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                            </svg>
+                            <a href="mailto:faizandevx@gmail.com" class="text-decoration-none bg-text-color"
+                                style="color: #0a165e;">
+                                faizandevx@gmail.com
+                            </a>
+                        </li>
+
+                        <!-- Address -->
+                        <li class="nav-item d-flex align-items-center px-5" style="color: #0a165e;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-geo-alt-fill me-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                            </svg>
+                            <span class="">
+                                <a href="#" class="text-decoration-none bg-text-color" style="color: #0a165e;">Pak
+                                    Avenue</a></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right: Social Icons -->
+                <ul class="navbar-nav flex-row gap-2">
+                    <!-- Facebook -->
+                    <li class="nav-item">
+                        <a href="#"
+                            class="text-color nav-link p-0 border rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:36px;height:36px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 
+                                                    3.603-.002 8.05c0 4.017 2.926 7.347 
+                                                    6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
+                                                    1.195-3.131 3.022-3.131.876 0 1.791.157 
+                                                    1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 
+                                                    1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 
+                                                    6.75-3.934 6.75-7.951" />
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Twitter -->
+                    <li class="nav-item">
+                        <a href="#"
+                            class="text-color nav-link p-0 border rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:36px;height:36px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 
+                                                    9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 
+                                                    0 0 16 3.542a6.7 6.7 0 0 
+                                                    1-1.889.518 3.3 3.3 0 0 
+                                                    0 1.447-1.817 6.5 6.5 0 0 
+                                                    1-2.087.793A3.286 3.286 0 0 
+                                                    0 7.875 6.03a9.32 9.32 0 0 
+                                                    1-6.767-3.429 3.29 3.29 0 0 
+                                                    0 1.018 4.382A3.3 3.3 0 0 
+                                                    1 .64 6.575v.045a3.29 3.29 0 0 
+                                                    0 2.632 3.218 3.2 3.2 0 0 
+                                                    1-.865.115 3 3 0 0 
+                                                    1-.614-.057 3.28 3.28 0 0 
+                                                    0 3.067 2.277A6.6 6.6 0 0 
+                                                    1 .78 13.58a6 6 0 0 
+                                                    1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- LinkedIn -->
+                    <li class="nav-item">
+                        <a href="#"
+                            class="text-color nav-link p-0 border rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:36px;height:36px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 
+                                                    0 16 .513 16 1.146v13.708c0 .633-.526 
+                                                    1.146-1.175 1.146H1.175C.526 16 0 
+                                                    15.487 0 14.854zm4.943 
+                                                    12.248V6.169H2.542v7.225zm-1.2-8.212c.837 
+                                                    0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 
+                                                    3.226 2.4 3.934c0 .694.521 1.248 
+                                                    1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 
+                                                    1.232-.878.869 0 1.216.662 1.216 
+                                                    1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 
+                                                    0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 
+                                                    0 7.225 0 7.225z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Instagram -->
+                    <li class="nav-item">
+                        <a href="#"
+                            class="text-color nav-link p-0 border rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:36px;height:36px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 
+                                                    3.85.088 3.269.222 2.76.42a3.9 3.9 
+                                                    0 0 0-1.417.923A3.9 3.9 0 0 
+                                                    0 .42 2.76C.222 3.268.087 3.85.048 
+                                                    4.7.01 5.555 0 5.827 0 8.001c0 
+                                                    2.172.01 2.444.048 3.297.04.852.174 
+                                                    1.433.372 1.942.205.526.478.972.923 
+                                                    1.417.444.445.89.719 1.416.923.51.198 
+                                                    1.09.333 1.942.372C5.555 15.99 5.827 
+                                                    16 8 16s2.444-.01 3.298-.048c.851-.04 
+                                                    1.434-.174 1.943-.372a3.9 3.9 0 0 
+                                                    0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 
+                                                    10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 
+                                                    3.9 0 0 0-.923-1.417A3.9 3.9 0 0 
+                                                    0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 
+                                                    10.172 0 7.998 0zm-.717 1.442h.718c2.136 
+                                                    0 2.389.007 3.232.046.78.035 1.204.166 
+                                                    1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 
+                                                    1.485.039.843.047 1.096.047 3.231s-.008 
+                                                    2.389-.047 3.232c-.035.78-.166 1.203-.275 
+                                                    1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 
+                                                    0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 
+                                                    1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 
+                                                    1.328a.96.96 0 1 0 0 1.92.96.96 
+                                                    0 0 0 0-1.92m-4.27 1.122a4.109 
+                                                    4.109 0 1 0 0 8.217 4.109 4.109 
+                                                    0 0 0 0-8.217m0 1.441a2.667 2.667 
+                                                    0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- MAIN NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-0 pe-3">
+            <div class="container-fluid p-0">
+                <!-- Brand -->
+                <div class="svg-wrapper position-relative">
+                    <svg viewBox="0 0 384 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                        <path
+                            d="M324.5 51.2295C313.7 90.2459 287.333 100 275.5 100H0V0H384C368.667 0.819672 335.3 12.2131 324.5 51.2295Z"
+                            fill="#2B4DFF" />
+                    </svg>
+                    <img src="alpha-removebg-preview.png" alt="Logo"
+                        class="position-absolute top-50 start-50 translate-middle">
+                </div>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+                    aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 fw-medium fs-6">
+                        <li class=" "><a class="nav-link" style="color: #0a165e;" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" style="color: #0a165e;" href="./about.html">About
+                                Us</a>
+                        </li>
+
+                        <!-- Services Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color: #0a165e;" href="#" id="servicesDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown rounded-0 border-0 mt-3"
+                                aria-labelledby="servicesDropdown" style="color: #0a165e;">
+                                <li><a class="dropdown-item custom-item" href="./services.html">Service</a></li>
+                                <li><a class="dropdown-item custom-item" href="./services-details.html">Service
+                                        Details</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Pages Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color: #0a165e;" href="#" id="pagesDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu custom-dropdown rounded-0 border-0 mt-3"
+                                aria-labelledby="pagesDropdown" style="color: #0a165e;">
+                                <li><a class="dropdown-item custom-item" href="./team.html">Team</a></li>
+                                <li><a class="dropdown-item custom-item" href="./team-details.html">Team Details</a>
+                                </li>
+                                <li><a class="dropdown-item custom-item" href="./pricing.html">Price</a></li>
+                                <li><a class="dropdown-item custom-item" href="./project.html">Project</a></li>
+                                <li><a class="dropdown-item custom-item" href="./project-details.html">Project
+                                        Details</a></li>
+                                <li><a class="dropdown-item custom-item" href="./faq’s.html">FAQ</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Blog Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color: #0a165e;" href="#" id="blogDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu custom-dropdown rounded-0 border-0 mt-3"
+                                aria-labelledby="blogDropdown" style="color: #0a165e;">
+                                <li><a class="dropdown-item custom-item" href="#">Blog Grid</a></li>
+                                <li><a class="dropdown-item custom-item" href="#">Blog List</a></li>
+                                <li><a class="dropdown-item custom-item" href="#">Blog Details</a></li>
+                                <li><a class="dropdown-item custom-item" href="#">Project</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" style="color: #0a165e;"
+                                href="./contact.html">Contact</a></li>
+                    </ul>
+
+                    <!-- Right Side Buttons -->
+                    <div class="d-flex align-items-center">
+                        <!-- Search -->
+                        <a href="#"
+                            class="btn btn-light border rounded-circle d-flex align-items-center justify-content-center me-3"
+                            style="width:40px;height:40px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001
+                                            q.044.06.098.115l3.85 3.85a1 1 0 0 0
+                                            1.415-1.414l-3.85-3.85a1 1 0 0
+                                            0-.115-.1zM12 6.5a5.5 5.5 0 1
+                                            1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </a>
+                        <!-- CTA -->
+                        <button class="Container fw-semibold fs-6 bg-primary text-light border-0 hover-center-slide">
+                            <span>Get A Quote</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                data-bs-interval="3000">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="ratio ratio-21x9">
+                            <!-- Background Image Container with Blur Effect -->
+                            <div class="carousel-background">
+                                <img src="./crousel1.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-caption d-flex h-100 align-items-center pt-5 pt-md-0">
+                            <div class="row w-100">
+                                <div class="col-12 col-md-9 text-start opacity-100 animate-fade-slide">
+                                    <span class="lead fw-medium">____Best IT Company</span>
+                                    <h1 class="h1 display-4 fw-bold">
+                                        Best IT Solution Agency For Your Business
+                                    </h1>
+                                    <h6 class="lead h6 fw-normal mb-3 mb-md-4">
+                                        Leverage agile frameworks to provide a robust synopsis for high
+                                        level overviews. Iterative approaches bring table survival.
+                                    </h6>
+                                    <button
+                                        class="Button fw-semibold fs-5 bg-primary text-light border-0 hover-center-slide">
+                                        <span>Let’s Talk With Us</span>
+                                    </button>
+                                </div>
+
+                                <!-- Navigation Buttons -->
+                                <div class="col-12 col-md-3 text-md-end mt-3 mt-md-0">
+                                    <div
+                                        class="d-flex flex-md-column justify-content-center align-items-center align-items-md-end gap-3">
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="0" class="btn btn-primary rounded-circle p-0 active"
+                                            style="width:50px;height:50px;">1</button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="1" class="btn btn-dark rounded-circle p-0"
+                                            style="width:50px;height:50px;"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="2" class="btn btn-dark rounded-circle p-0"
+                                            style="width:50px;height:50px;"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="ratio ratio-21x9">
+                            <!-- Background Image Container with Blur Effect -->
+                            <div class="carousel-background">
+                                <img src="./crousel2.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-caption d-flex h-100 align-items-center pt-5 pt-md-0">
+                            <div class="row w-100">
+                                <div class="col-12 col-md-9 text-start opacity-100 animate-fade-slide">
+                                    <span class="lead fw-medium">____Best IT Company</span>
+                                    <h1 class="h1 display-4 fw-bold">
+                                        Best IT Solution Agency For Your Business
+                                    </h1>
+                                    <h6 class="lead h6 fw-normal mb-3 mb-md-4">
+                                        Leverage agile frameworks to provide a robust synopsis for high
+                                        level overviews. Iterative approaches bring table survival.
+                                    </h6>
+                                    <button
+                                        class="Button fw-semibold fs-5 bg-primary text-light border-0 hover-center-slide">
+                                        <span>Let’s Talk With Us</span>
+                                    </button>
+                                </div>
+                                <div class="col-12 col-md-3 text-md-end mt-3 mt-md-0">
+                                    <div
+                                        class="d-flex flex-md-column justify-content-center align-items-center align-items-md-end gap-3">
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="0" class="btn btn-dark rounded-circle p-0"
+                                            style="width:50px;height:50px;"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="1" class="btn btn-primary rounded-circle p-0 active"
+                                            style="width:50px;height:50px;">2</button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="2" class="btn btn-dark rounded-circle p-0"
+                                            style="width:50px;height:50px;"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="ratio ratio-21x9">
+                            <!-- Background Image Container with Blur Effect -->
+                            <div class="carousel-background">
+                                <img src="./crousel3.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-caption d-flex h-100 align-items-center pt-5 pt-md-0">
+                            <div class="row w-100">
+                                <div class="col-12 col-md-9 text-start opacity-100 animate-fade-slide">
+                                    <span class="lead fw-medium">____Best IT Company</span>
+                                    <h1 class="h1 display-4 fw-bold">
+                                        Best IT Solution Agency For Your Business
+                                    </h1>
+                                    <h6 class="lead h6 fw-normal mb-3 mb-md-4">
+                                        Leverage agile frameworks to provide a robust synopsis for high
+                                        level overviews. Iterative approaches bring table survival.
+                                    </h6>
+                                    <button
+                                        class="Button fw-semibold fs-5 bg-primary text-light border-0 hover-center-slide">
+                                        <span>Let’s Talk With Us</span>
+                                    </button>
+                                </div>
+                                <div class="col-12 col-md-3 text-md-end mt-3 mt-md-0">
+                                    <div
+                                        class="d-flex flex-md-column justify-content-center align-items-center align-items-lg-end gap-3">
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="0" class="btn btn-dark rounded-circle p-0"
+                                            style="width:50px;height:50px;"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="1" class="btn btn-dark rounded-circle p-0"
+                                            style="width:50px;height:50px;"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="2" class="btn btn-primary rounded-circle p-0 active"
+                                            style="width:50px;height:50px;">3</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <main class="">
+        <!-- Company About Section -->
+        <section>
+            <div class="p-5">
+                <div class="row g-5 py-5">
+                    <div class=" d-flex justify-content-between">
+                        <div class="col-12 col-lg-8">
+                            <span class="text-primary fs-5">About Your Company</span>
+                            <h1 class=" display-5 fw-bolder w-50" style="color: #0a165e;">We Execute Ideas From Start
+                                To Finish</h1>
+                        </div>
+                        <div class="col-12 col-lg-2 mt-5">
+                            <button
+                                class="text-decoration-none Button fw-semibold fs-5 border border-primary text-primary px-4 py-2 hover-center-slide">
+                                <span>Know More</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-5">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="d-flex align-items-start my-5">
+                            <!-- Image Wrapper -->
+                            <div class="p-4 Button" style="background-color: #f0f0f0;">
+                                <img src="./image.png" height="100" width="100" class="img-fluid" alt="">
+                            </div>
+                            <!-- Text -->
+                            <div class="mx-4">
+                                <h4 class="mb-1 fw-bold" style="color: #0a165e;">Our Mission</h4>
+                                <p class=" text-opacity-100 mb-0" style="color: #585b6f;">
+                                    Our mission is to push boundaries, engage audiences, and driv engage innovation
+                                    through
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start my-5">
+                            <!-- Image Wrapper -->
+                            <div class="p-4 Button" style="background-color: #f0f0f0;">
+                                <img src="./image copy.png" height="100" width="100" class="img-fluid" alt="">
+                            </div>
+                            <!-- Text -->
+                            <div class="mx-4">
+                                <h4 class="mb-1 fw-bold" style="color: #0a165e;">Our Vission</h4>
+                                <p class="text-opacity-100 mb-0" style="color: #585b6f;">
+                                    Our mission is to push boundaries, engage audiences, and driv engage innovation
+                                    through
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start">
+                            <!-- Image Wrapper -->
+                            <div class="p-4 Button" style="background-color: #f0f0f0;">
+                                <img src="./image copy 2.png" height="100" width="100" class="img-fluid" alt="">
+                            </div>
+                            <!-- Text -->
+                            <div class="mx-4">
+                                <h4 class="mb-1 fw-bold" style="color: #0a165e;">Our Awards</h4>
+                                <p class="text-opacity-100 mb-0" style="color: #585b6f;">
+                                    Our mission is to push boundaries, engage audiences, and driv engage innovation
+                                    through
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 py-5">
+                        <div>
+                            <img src="image copy 3.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="text-opacity-100 me-5 mt-4" style="color: #585b6f;">
+                            <p>Repellendus autem ruibusdam et aut officiis debitis aut re necessitatibus saepe eveniet
+                                ut et
+                                repudianda sint et molestiae non recusandae.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <img src="image copy 4.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section>
+            <div class="p-5 my-5" style="background-color: #f0f0f0;">
+                <!-- Heading -->
+                <div class="row text-center mb-5">
+                    <div class="col-12">
+                        <div class="w-75 m-auto">
+                            <span class="text-primary fs-5 fw-semibold">Our Services</span>
+                            <h1 class="h1 fw-bold" style="color: #0a165e;">
+                                Smart Solutions for a Digital World
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cards Grid -->
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="custom-card h-100u custom-button p-4  shadow-sm bg-white">
+                            <div class="icon-box Button w-25 mb-3 text-center p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-pc-display-horizontal text-dark" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5" />
+                                </svg>
+                            </div>
+                            <div class="mt-5">
+                                <h5 class="fw-bold mb-4 text-dark">Managed IT Services</h5>
+                                <p class="text-secondary">
+                                    It is a long established fact that reader will be distracte readable content of a
+                                    when looking.
+                                </p>
+                            </div>
+                            <a href="#" class="text-decoration-none fw-medium">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right ms-1" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 
+                                            .708-.708l4 4a.5.5 0 0 1 0 .708l-4 
+                                            4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 
+                                            0 0 1 1 8" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="p-4 h-100 custom-button custom-card shadow-sm" style="background-color: #ffffff;">
+                            <div class="w-25 mb-3 icon-box Button text-center p-3" style="background-color: #f5f6f7;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-cloud" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.406 4.342a5.53 5.53 0 0 1 10.338 1.175A3.5 3.5 0 0 1 12.5 13H4a4 4 0 0 1 .406-8.658z" />
+                                </svg>
+                            </div>
+                            <div class="mt-5">
+                                <h5 class="fw-bold mb-4" style="color: #0a165e;">Cloud Services</h5>
+                                <p style="color: #585b6f;">
+                                    It is a long established fact that reader will be distracte readable content of
+                                    a
+                                    when looking.
+                                </p>
+                            </div>
+                            <a href="#" class="text-decoration-none fw-medium">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right ms-1" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 
+                                            .708-.708l4 4a.5.5 0 0 1 0 .708l-4 
+                                            4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 
+                                            0 0 1 1 8" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="p-4 h-100 custom-button custom-card shadow-lg" style="background-color: #ffffff;">
+                            <div class="w-25 mb-3 icon-box Button text-center p-3" style="background-color: #f5f6f7;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-cpu" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5 0a.5.5 0 0 1 .5.5V1h1V.5a.5.5 0 0 1 1 0V1h1V.5a.5.5 0 0 1 1 0V1h.5A2.5 2.5 0 0 1 13 3.5V4h.5a.5.5 0 0 1 0 1H13v1h.5a.5.5 0 0 1 0 1H13v1h.5a.5.5 0 0 1 0 1H13v.5A2.5 2.5 0 0 1 10.5 13H10v.5a.5.5 0 0 1-1 0V13H8v.5a.5.5 0 0 1-1 0V13H6v.5a.5.5 0 0 1-1 0V13h-.5A2.5 2.5 0 0 1 2 10.5V10h-.5a.5.5 0 0 1 0-1H2V8h-.5a.5.5 0 0 1 0-1H2V6h-.5a.5.5 0 0 1 0-1H2v-.5A2.5 2.5 0 0 1 4.5 2H5V1.5a.5.5 0 0 1 .5-.5z" />
+                                </svg>
+                            </div>
+                            <div class="mt-5">
+                                <h5 class="fw-bold mb-4" style="color: #0a165e;">Machine Learning</h5>
+                                <p style="color: #585b6f;">
+                                    It is a long established fact that reader will be distracte readable content of
+                                    a
+                                    when looking.
+                                </p>
+                            </div>
+                            <a href="#" class="text-decoration-none fw-medium">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right ms-1" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 
+                                            .708-.708l4 4a.5.5 0 0 1 0 .708l-4 
+                                            4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 
+                                            0 0 1 1 8" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="p-4 h-100 custom-button custom-card shadow-lg" style="background-color: #ffffff;">
+                            <div class="w-25 mb-3 icon-box Button text-center p-3" style="background-color: #f5f6f7;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-shield-lock" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 0c-.69 0-1.87.258-3.06.65C3.76 1.042 2.22 1.6 1.34 2.09a1.5 1.5 0 0 0-.74 1.28c-.02.67-.04 1.67.26 2.94.28 1.25.8 2.74 1.64 4.05a12.35 12.35 0 0 0 3.39 3.44c.53.33 1.06.6 1.58.78.52-.18 1.05-.45 1.58-.78a12.35 12.35 0 0 0 3.39-3.44c.84-1.31 1.36-2.8 1.64-4.05.3-1.27.28-2.27.26-2.94a1.5 1.5 0 0 0-.74-1.28c-.88-.49-2.42-1.05-3.6-1.44C9.87.258 8.69 0 8 0z" />
+                                </svg>
+                            </div>
+                            <div class="mt-5">
+                                <h5 class="fw-bold mb-4" style="color: #0a165e;">Data Security</h5>
+                                <p style="color: #585b6f;">
+                                    It is a long established fact that reader will be distracte readable content of
+                                    a
+                                    when looking.
+                                </p>
+                            </div>
+                            <a href="#" class="text-decoration-none fw-medium">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right ms-1" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 
+                                            .708-.708l4 4a.5.5 0 0 1 0 .708l-4 
+                                            4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 
+                                            0 0 1 1 8" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer text -->
+                <div class="p-3 text-center fs-6 mt-4" style="color: #0a165e;">
+                    <p class="lead fw-normal">You can also find our Consultant Service to
+                        <a href="#" class="text-decoration-none">Contact</a> for the consulting
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Solutions Driving Global Connectivity -->
+        <section>
+            <div class="text-center p-5">
+                <!-- Heading -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <span class="text-primary fs-6 fw-medium">Our Project</span>
+                        <h1 class="h1 fw-bold w-75 m-auto" style="color: #0a165e;">
+                            Tech Solutions Driving Global Connectivity
+                        </h1>
+                    </div>
+                </div>
+
+                <!-- Project Images Grid -->
+                <div class="row g-4">
+                    <!-- Project 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card border-0 h-100 project-card">
+                            <img src="./image copy 5.png" class="card-img-top img-fluid Button rounded-0"
+                                alt="Project 1">
+                            <div class="overlay">
+                                <div class="overlay-icon Button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25 " fill="currentColor"
+                                        class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                                    </svg>
+                                </div>
+                                <div class="Button bg-light py-5" style="width: 300px; height: 150px;">
+                                    <div class="overlay-title" style="color: #0a165e;">Marketing Agency Website</div>
+                                    <div class="overlay-subtitle" style="color: #585b6f;">Development, Marketing</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card border-0 h-100 project-card">
+                            <img src="./image copy 6.png" class="card-img-top img-fluid rounded-0 Button"
+                                alt="Project 2">
+                            <div class="overlay">
+                                <div class="overlay-icon Button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25 " fill="currentColor"
+                                        class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                                    </svg>
+                                </div>
+                                <div class="Button bg-light py-5" style="width: 300px; height: 150px;">
+                                    <div class="overlay-title" style="color: #0a165e;">E-Commerce Redesign</div>
+                                    <div class="overlay-subtitle" style="color: #585b6f;">UI/UX, Development</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card border-0 h-100 project-card">
+                            <img src="./image copy 7.png" class="card-img-top img-fluid rounded-0 Button"
+                                alt="Project 3">
+                            <div class="overlay">
+                                <div class="overlay-icon Button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25 " fill="currentColor"
+                                        class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                                    </svg>
+                                </div>
+                                <div class="Button bg-light py-5" style="width: 300px; height: 150px;">
+                                    <div class="overlay-title" style="color: #0a165e;">Healthcare App UI</div>
+                                    <div class="overlay-subtitle" style="color: #585b6f;">Design, Mobile App</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="mt-5">
+                    <button class="Button lead fw-normal bg-primary text-light px-4 py-3 border-0 hover-center-slide">
+                        View Our All Works
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team Members Details. -->
+        <section class="py-5"
+            style="background-image: url('./image copy 8.png'); background-color: #0a165e; background-size: cover; background-position: center;">
+            <div class="container">
+                <div class="row py-5 g-5">
+
+                    <!-- Preview area -->
+                    <div class="col-12 col-md-12 col-lg-5 pt-4">
+                        <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true">
+                            <div class="carousel-inner">
+
+                                <!-- Carousel Item 1 -->
+                                <div class="carousel-item active" style="height: 500px;">
+                                    <div class="w-100 h-100 d-flex position-relative custom-button"
+                                        style="background: url('./image copy 9.png') center/cover no-repeat; height: 500px;">
+                                        <!-- Social Icons -->
+                                        <div
+                                            class="position-absolute top-50 end-0 translate-middle-y d-flex flex-column gap-2 me-3">
+                                            <a href="#"
+                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                                <!-- Facebook SVG -->
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 
+                                                4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
+                                                1.195-3.131 3.022-3.131.876 0 1.791.157 
+                                                1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 
+                                                1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 
+                                                6.75-3.934 6.75-7.951" />
+                                                </svg>
+                                            </a>
+
+                                            <!-- Linkdin -->
+                                            <a href="#"
+                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                                </svg>
+                                            </a>
+
+                                            <!-- Twitter -->
+                                            <a href="#"
+                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                                                </svg>
+                                            </a>
+
+                                            <!-- Instagram -->
+                                            <a href="#"
+                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                        <!-- Name + designation -->
+                                        <div
+                                            class="position-absolute bottom-0 start-0 w-75 mx-5 my-3 bg-light p-4 d-flex justify-content-between align-items-center Button">
+                                            <div>
+                                                <a href="#" class="text-decoration-none" style="color:#0a165e;">
+                                                    <h4 class="h4 mb-0">Rosy Gaggero</h4>
+                                                </a>
+                                                <span class="opacity-100" style="color: #585b6f;">Web
+                                                    Developer</span>
+                                            </div>
+                                            <div class="rounded-circle p-3 bg-opacity-100 fw-bolder"
+                                                style="background-color:#f0f0f0;">-</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Carousel Item 2 -->
+                                <div class="carousel-item" style="height: 500px;">
+                                    <div class="w-100 h-100 d-flex position-relative custom-button"
+                                        style="background: url('./image copy 10.png') center/cover no-repeat; height: 500px;">
+                                        <!-- Social Icons -->
+                                        <div
+                                            class="position-absolute top-50 end-0 translate-middle-y d-flex flex-column gap-2 me-3">
+                                            <a href="#"
+                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                                <!-- Facebook SVG -->
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 
+                                                            4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
+                                                            1.195-3.131 3.022-3.131.876 0 1.791.157 
+                                                            1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 
+                                                            1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 
+                                                            6.75-3.934 6.75-7.951" />
+                                                </svg>
+                                            </a>
+
+                                            <!-- Linkdin -->
+                                            <a href="#"
+                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                                </svg>
+                                            </a>
+
+                                            <!-- Twitter -->
+                                            <a href="#"
+                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                                                </svg>
+                                            </a>
+
+                                            <!-- Instagram -->
+                                            <a href="#"
+                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                        <!-- Name + designation -->
+                                        <div
+                                            class="position-absolute bottom-0 start-0 w-75 mx-5 my-3 bg-white p-4 d-flex justify-content-between align-items-center Button">
+                                            <div>
+                                                <a href="#" class="text-decoration-none" style="color:#0a165e;">
+                                                    <h4 class="h4 mb-0">Rosy Gaggero</h4>
+                                                </a>
+                                                <span class="text-opacity-100" style="color: #585b6f;">Web
+                                                    Developer</span>
+                                            </div>
+                                            <div class="rounded-circle p-3 bg-opacity-100 fw-bolder"
+                                                style="background-color:#f0f0f0;">-</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Carousel Item 3 -->
+                                <div class="carousel-item" style="height: 500px;">
+                                    <div class="w-100 h-100 d-flex position-relative custom-button"
+                                        style="background: url('./image copy 11.png') center/cover no-repeat; height: 500px;">
+                                        <!-- Social Icons -->
+                                        <div
+                                            class="position-absolute top-50 end-0 translate-middle-y d-flex flex-column gap-2 me-3">
+                                            <a href="#"
+                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                                <!-- Facebook SVG -->
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 
+                                                            4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
+                                                            1.195-3.131 3.022-3.131.876 0 1.791.157 
+                                                            1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 
+                                                            1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 
+                                                            6.75-3.934 6.75-7.951" />
+                                                </svg>
+                                            </a>
+
+                                            <!-- Linkdin -->
+                                            <a href="#"
+                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                                </svg>
+                                            </a>
+
+                                            <!-- Twitter -->
+                                            <a href="#"
+                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                                                </svg>
+                                            </a>
+
+                                            <!-- Instagram -->
+                                            <a href="#"
+                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                        <!-- Name + designation -->
+                                        <div
+                                            class="position-absolute bottom-0 start-0 w-75 mx-5 my-3 bg-white p-4 d-flex justify-content-between align-items-center Button">
+                                            <div>
+                                                <a href="#" class="text-decoration-none" style="color:#0a165e;">
+                                                    <h4 class="h4 mb-0">Rosy Gaggero</h4>
+                                                </a>
+                                                <span class="text-opacity-100" style="color: #585b6f;">Web
+                                                    Developer</span>
+                                            </div>
+                                            <div class="rounded-circle p-3 bg-opacity-100 fw-bolder"
+                                                style="background-color:#f0f0f0;">-</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text + arrows -->
+                    <div class="col-12 col-md-12 col-lg-7 shadow-lg custom-button p-5 border-primary"
+                        style="background-color: #0a165e;">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <span class="text-primary fw-semibold">Our Team Members</span>
+                                <h1 class="h1 text-light display-4 fw-bold w-75">Our Team is Ready To Help.</h1>
+                                <p class="w-75 text-light">It is a long established fact that a reader will be
+                                    distracted by the
+                                    readable content of a page when looking.</p>
+                            </div>
+
+                            <!-- Arrows -->
+                            <div class="d-flex flex-column gap-3 mt-4">
+                                <button class="arrow-circle" type="button" data-bs-target="#teamCarousel"
+                                    data-bs-slide="prev">
+                                    &larr;
+                                </button>
+                                <button class="arrow-circle" type="button" data-bs-target="#teamCarousel"
+                                    data-bs-slide="next">
+                                    &rarr;
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnails -->
+                        <div
+                            class="row mt-3 d-flex carousel-indicators justify-content-center position-static ms-0 g-3">
+                            <div class="col-4">
+                                <img src="./image copy 9.png" class="img-fluid link-opacity-50-hover" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img src="./image copy 10.png" class="img-fluid link-opacity-50-hover" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img src="./image copy 11.png" class="img-fluid link-opacity-50-hover" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- our Process 3 Steps -->
+        <section class="container text-center">
+            <div style="padding-top: 130px; padding-bottom: 130px;">
+                <div class="row">
+                    <div class="col-12">
+                        <span class="text-primary fw-bold">Our Process</span>
+                        <h1 class="h1 fw-bold w-50 m-auto" style="color: #0a165e;">Features That Simplify The
+                            Ticketing Process</h1>
+                    </div>
+                </div>
+
+                <div class="row g-5 pt-5">
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div>
+                            <img src="./image copy 13.png" class="img-fluid mb-5" alt="">
+                        </div>
+                        <div>
+                            <span class="rounded-pill p-2 bg-primary border-0 text-light lead fw-normal">STEP -
+                                01</span>
+                        </div>
+                        <div class="mt-5">
+                            <h4 class="h4" style="color: #0a165e;">Initiation & Planning</h4>
+                            <p class="text-secondary opacity-100 lead fw-normal">We are architects innovation
+                                trailblazers of
+                                technological advancement</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div>
+                            <img src="./image copy 14.png" class="img-fluid mb-5" alt="">
+                        </div>
+                        <div>
+                            <span class="rounded-pill p-2 bg-primary border-0 text-light  lead fw-normal">STEP -
+                                02</span>
+                        </div>
+                        <div class="mt-5">
+                            <h4 class="h4" style="color: #0a165e;">Execution & Development</h4>
+                            <p class="text-secondary opacity-100 lead fw-normal">We are architects innovation
+                                trailblazers of
+                                technological advancement</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div>
+                            <img src="./image copy 15.png" class="img-fluid mb-5" alt="">
+                        </div>
+                        <div>
+                            <span class="rounded-pill p-2 bg-primary border-0 text-light lead fw-normal">STEP -
+                                03</span>
+                        </div>
+                        <div class="mt-5">
+                            <h4 class="h4" style="color: #0a165e;">Testing & Maintenance</h4>
+                            <p class="text-secondary opacity-100 fw-normal lead">We are architects innovation
+                                trailblazers of
+                                technological advancement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Make An Appoitment form -->
+        <section>
+            <div class="img-fluid p-5 w-100 d-flex align-items-center"
+                style="background-image: url(./bg-image.jpg); background-size: cover; background-position: center; min-height: 100vh;">
+                <div class="row g-5 w-100 align-items-center justify-content-center">
+
+                    <!-- Play Button -->
+                    <div class="col-12 col-lg-6 d-flex justify-content-center order-1 order-lg-1">
+                        <a href="./galaxy stock video...  copyright free galaxy video.mp4"
+                            class="text-decoration-none text-white rounded-circle bg-primary d-flex justify-content-center align-items-center"
+                            style="width: 120px; height: 120px;">
+                            <!-- Play button icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+                                fill="white" class="ms-1">
+                                <path
+                                    d="M19.9005 10.6854C21.2395 11.4541 21.2395 13.3857 19.9005 14.1544L3.23761 23.7201C1.90428 24.4856 0.241875 23.523 0.241875 21.9856L0.241875 2.85419C0.241875 1.31677 1.90428 0.354247 3.23761 1.11968L19.9005 10.6854Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Form -->
+                    <div class="col-12 col-lg-6 order-2 order-lg-2">
+                        <div class="custom-button shadow-lg p-4 p-md-5 h-100" style="background-color: #f0f0f0;">
+                            <h2 class="h2 fw-bold" style="color: #0a165e;">Make an Appointment</h2>
+                            <p class="text-secondary opacity-100 lead">
+                                Feel free to contact with us, we don’t spam your email
+                            </p>
+
+                            <!-- Full Name -->
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control Button" id="floatingName"
+                                    placeholder="Full Name">
+                                <label for="floatingName">Full Name*</label>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control Button" id="floatingEmail"
+                                    placeholder="name@example.com">
+                                <label for="floatingEmail">Email Here*</label>
+                            </div>
+
+                            <!-- Select -->
+                            <div class="form-floating mb-3">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <select class="form-select Button border-0" id="serviceSelect">
+                                            <option selected class="fw-bold">Select An Option*</option>
+                                            <option value="1">Web Development</option>
+                                            <option value="2">Mobile APP</option>
+                                            <option value="3">Graphic Design</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control Button" placeholder="Leave a comment here"
+                                    id="floatingTextarea" style="height: 150px"></textarea>
+                                <label for="floatingTextarea">Your Message*</label>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button
+                                class="Button fw-semibold fs-5 bg-primary text-light px-4 py-2 border-0 hover-center-slide">
+                                <span>Submit Message</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Affordable Pricing Plans For IT Business -->
+        <section>
+            <div class="container py-5">
+                <div class="row g-5 pt-5">
+
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card custom-button h-100 mx-auto shadow-lg"
+                            style="background-color: #f0f0f0; max-width: 25rem;">
+                            <div class="card-body d-flex flex-column">
+                                <div>
+                                    <span class="fw-bold lead" style="color: #0a165e;">Standard Plan</span>
+                                </div>
+                                <div class="border-bottom pb-4 d-flex align-items-end">
+                                    <h1 class="display-4 fw-bolder mb-0" style="color: #0a165e;">$79</h1>
+                                    <small class="lead fw-medium ms-2 mb-1" style="color: #0a165e;">/Month</small>
+                                </div>
+
+                                <div class="mt-4 flex-grow-1">
+
+                                    <ul class="list-unstyled d-flex flex-column gap-3" style="color: #0a165e;">
+                                        <li class="lead fw-normal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span>Advanced Analytics</span>
+                                        </li>
+                                        <li class="lead fw-normal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span>Unlimited Projects</span>
+                                        </li>
+                                        <li class="lead fw-normal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span>Priority Support</span>
+                                        </li>
+                                        <li class="lead fw-normal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span>Customizable Branding</span>
+                                        </li>
+                                        <li class="lead fw-normal"><svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                height="22" fill="currentColor" class="bi bi-check2"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span>All API Access
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <button
+                                    class="Button fs-5 fw-semibold bg-primary text-light px-4 py-3 border-0 hover-center-slide">
+                                    <span>Select This Plan</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card custom-button h-100 mx-auto text-light shadow-lg"
+                            style="background-color: #2b4dff; max-width: 25rem;">
+                            <div class="card-body d-flex flex-column">
+                                <div>
+                                    <span class="fw-bold lead">Standard Plan</span>
+                                </div>
+                                <div class="border-bottom pb-4 d-flex align-items-end mt-3">
+                                    <div class="d-flex align-items-end position-relative">
+                                        <h1 class="display-4 fw-bolder mb-0">$79</h1>
+                                        <small class="lead fw-medium ms-2 mb-1">/Month</small>
+                                    </div>
+                                    <span
+                                        class="badge p-4 rounded-end-0 rounded-start-5 border-0 fw-normal fs-5 text-dark ms-auto position-absolute end-0"
+                                        style="background-color: #f0f0f0;">Popular</span>
+                                </div>
+
+                                <div class="mt-4 flex-grow-1">
+                                    <ul class="list-unstyled d-flex flex-column gap-3" style="color: #f0f0f0;">
+                                        <li class="lead fw-normal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span>Advanced Analytics</span>
+                                        </li>
+                                        <li class="lead fw-normal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span>Unlimited Projects</span>
+                                        </li>
+                                        <li class="lead fw-normal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span>Priority Support</span>
+                                        </li>
+                                        <li class="lead fw-normal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span>Customizable Branding</span>
+                                        </li>
+                                        <li class="lead fw-normal"><svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                height="22" fill="currentColor" class="bi bi-check2"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span>All API Access</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <button
+                                    class="Button fs-5 fw-semibold text-primary px-4 py-3 border-0 hover-center-slide"
+                                    style="background-color: #f0f0f0;">
+                                    <span>Select This Plan</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card custom-button h-100 mx-auto shadow-lg"
+                            style="background-color: #f0f0f0; max-width: 25rem;">
+                            <div class="card-body d-flex flex-column">
+                                <div>
+                                    <span class="fw-bold lead" style="color: #0a165e;">Standard Plan</span>
+                                </div>
+                                <div class="border-bottom pb-4 d-flex align-items-end">
+                                    <h1 class="display-4 fw-bolder mb-0" style="color: #0a165e;">$79</h1>
+                                    <small class="lead fw-medium ms-2 mb-1" style="color: #0a165e;">/Month</small>
+                                </div>
+
+                                <div class="mt-4 flex-grow-1">
+                                    <ul class="list-unstyled d-flex flex-column gap-3" style="color: #0a165e;">
+                                        <li class="lead fw-normal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span>Advanced Analytics</span>
+                                        </li>
+                                        <li class="lead fw-normal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span>Unlimited Projects</span>
+                                        </li>
+                                        <li class="lead fw-normal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span>Priority Support</span>
+                                        </li>
+                                        <li class="lead fw-normal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span>Customizable Branding</span>
+                                        </li>
+                                        <li class="lead fw-normal"><svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                height="22" fill="currentColor" class="bi bi-check2"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                            </svg>
+                                            <span>All API Access</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <button
+                                    class="Button fs-5 fw-semibold bg-primary text-light px-4 py-3 border-0 hover-center-slide">
+                                    <span>Select This Plan</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Circles Section -->
+        <section>
+            <div class="container py-5">
+                <div class="row g-5 py-5 justify-content-center">
+
+                    <!-- Circle Item  1-->
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center pt-4">
+                        <div class="rounded-circle d-flex justify-content-center align-items-center border border-primary"
+                            style="width: 100%; max-width: 295px; aspect-ratio: 1 / 1;">
+                            <div class="rounded-circle d-flex flex-column justify-content-center align-items-center bg-light text-primary"
+                                style="width: 90%; height: 90%;">
+                                <h1 class="display-4 fw-bolder mb-1" style="color: #0a165e;">25</h1>
+                                <span class="fw-semibold fs-5" style="color: #0a165e;">Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Circle Item 2-->
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center pb-4">
+                        <div class="rounded-circle d-flex justify-content-center align-items-center border border-primary"
+                            style="width: 100%; max-width: 295px; aspect-ratio: 1 / 1;">
+                            <div class="rounded-circle d-flex flex-column justify-content-center align-items-center bg-light text-primary"
+                                style="width: 90%; height: 90%;">
+                                <h1 class="display-4 fw-bolder mb-1" style="color: #0a165e;">97%</h1>
+                                <span class="fw-semibold fs-5" style="color: #0a165e;">Retention Rate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Circle Item 3-->
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center pt-4">
+                        <div class="rounded-circle d-flex justify-content-center align-items-center border border-primary"
+                            style="width: 100%; max-width: 295px; aspect-ratio: 1 / 1;">
+                            <div class="rounded-circle d-flex flex-column justify-content-center align-items-center bg-light text-primary"
+                                style="width: 90%; height: 90%;">
+                                <h1 class="display-4 fw-bolder mb-1" style="color: #0a165e;">8k</h1>
+                                <span class="fw-semibold fs-5" style="color: #0a165e;">Projects Completed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Circle Item 4-->
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center pb-4">
+                        <div class="rounded-circle d-flex justify-content-center align-items-center border border-primary"
+                            style="width: 100%; max-width: 295px; aspect-ratio: 1 / 1;">
+                            <div class="rounded-circle d-flex flex-column justify-content-center align-items-center bg-light text-primary"
+                                style="width: 90%; height: 90%;">
+                                <h1 class="display-4 fw-bolder mb-1" style="color: #0a165e;">19K</h1>
+                                <span class="fw-semibold fs-5" style="color: #0a165e;">Happy Clients</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial What Our Clients Say About Us -->
+        <section>
+            <!-- Background Section -->
+            <div class="bg-opacity-100 p-3 p-md-5 w-100 h-100"
+                style="background-image: url('./image%20copy%2017.png'); background-color: #f0f0f0; background-size: cover; background-position: center;">
+                <div class="container py-5">
+                    <div class="row g-5 align-items-center">
+                        <!-- Left Column -->
+                        <div class="col-12 col-lg-5">
+                            <div>
+                                <span class="lead fw-medium text-primary mb-3 d-block">Testimonial</span>
+                                <h1 class="h1 fw-bolder display-6" style="color: #0a165e;">
+                                    What Our Clients Say About Us
+                                </h1>
+                                <p class="lead fw-normal mt-4" style="color: darkslategrey;">
+                                    Each demo built with Teba will look different. You can customize almost anything
+                                    in the appearance of your website.
+                                </p>
+                            </div>
+
+                            <!-- Arrows -->
+                            <div class="mt-4 d-flex">
+                                <!-- Left Arrow -->
+                                <a class="p-3 text-primary bg-light arrow-btn Button me-3" href="#testimonialCarousel"
+                                    role="button" data-bs-slide="prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 
+                                                0 1 0-.708-.708l-4 4a.5.5 0 0 0 
+                                                0 .708l4 4a.5.5 0 0 0 
+                                                .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                                    </svg>
+                                </a>
+
+                                <!-- Right Arrow -->
+                                <a class="p-3 text-primary bg-light arrow-btn Button" href="#testimonialCarousel"
+                                    role="button" data-bs-slide="next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 
+                                                0 0 1 .708-.708l4 4a.5.5 0 0 1 0 
+                                                .708l-4 4a.5.5 0 0 1-.708-.708L13.293 
+                                                8.5H1.5A.5.5 0 0 1 1 8" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Right Column (Carousel) -->
+                        <div class="col-12 col-lg-7">
+                            <div id="testimonialCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                                data-bs-interval="3000">
+                                <div class="carousel-inner">
+
+                                    <!-- Testimonial 1 -->
+                                    <div class="carousel-item active">
+                                        <div class="p-5 p-md-5 bg-light border border-secondary border-opacity-50 custom-button"
+                                            style="color: #0a165e;">
+                                            <!-- Stars -->
+                                            <div class="d-flex mb-4 flex-wrap gap-2">
+                                                <!-- 5 Stars -->
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                    fill="currentColor" class="bi bi-star-fill" style="color:#ebab08;"
+                                                    viewBox="0 0 16 16">
+                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 
+                                                            6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792
+                                                            c.197-.39.73-.39.927 0l2.184 4.327 
+                                                            4.898.696c.441.062.612.636.282.95l-3.522 
+                                                            3.356.83 4.73c.078.443-.36.79-.746.592L8 
+                                                            13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                    fill="currentColor" class="bi bi-star-fill" style="color:#ebab08;"
+                                                    viewBox="0 0 16 16">
+                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 
+                                                            6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792
+                                                            c.197-.39.73-.39.927 0l2.184 4.327 
+                                                            4.898.696c.441.062.612.636.282.95l-3.522 
+                                                            3.356.83 4.73c.078.443-.36.79-.746.592L8 
+                                                            13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                    fill="currentColor" class="bi bi-star-fill" style="color:#ebab08;"
+                                                    viewBox="0 0 16 16">
+                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 
+                                                            6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792
+                                                            c.197-.39.73-.39.927 0l2.184 4.327 
+                                                            4.898.696c.441.062.612.636.282.95l-3.522 
+                                                            3.356.83 4.73c.078.443-.36.79-.746.592L8 
+                                                            13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                    fill="currentColor" class="bi bi-star-fill" style="color:#ebab08;"
+                                                    viewBox="0 0 16 16">
+                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 
+                                                            6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792
+                                                            c.197-.39.73-.39.927 0l2.184 4.327 
+                                                            4.898.696c.441.062.612.636.282.95l-3.522 
+                                                            3.356.83 4.73c.078.443-.36.79-.746.592L8 
+                                                            13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                    fill="currentColor" class="bi bi-star-fill" style="color:#ebab08;"
+                                                    viewBox="0 0 16 16">
+                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 
+                                                            6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792
+                                                            c.197-.39.73-.39.927 0l2.184 4.327 
+                                                            4.898.696c.441.062.612.636.282.95l-3.522 
+                                                            3.356.83 4.73c.078.443-.36.79-.746.592L8 
+                                                            13.187l-4.389 2.256z" />
+                                                </svg>
+                                            </div>
+
+                                            <!-- Review -->
+                                            <p class="lead fw-normal fs-5">
+                                                “ Working with several word themes and templates the last years only can
+                                                say this is best in every level use it for my reviews that I have
+                                                already are company and the reviews that I have already are all
+                                                excellent. Not only the design but the code ”
+                                            </p>
+
+                                            <!-- Author -->
+                                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./image copy 18.png" class="img-fluid rounded-circle"
+                                                        width="50" height="50" alt="">
+                                                    <div class="ms-3">
+                                                        <h5 class="h5 fw-semibold mb-0">Marvin McKinney</h5>
+                                                        <small class="fw-medium">Product Manager</small>
+                                                    </div>
+                                                </div>
+                                                <img src="./image copy 19.png" class="img-fluid" width="40" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Testimonial 2 -->
+                                    <div class="carousel-item">
+                                        <div class="p-4 p-md-5 bg-light border border-secondary border-opacity-50 custom-button"
+                                            style="color: #0a165e;">
+                                            <!-- Stars -->
+                                            <div class="d-flex mb-4 flex-wrap gap-2">
+                                                <!-- 5 Stars -->
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                    fill="currentColor" class="bi bi-star-fill" style="color:#ebab08;"
+                                                    viewBox="0 0 16 16">
+                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 
+                                                            6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792
+                                                            c.197-.39.73-.39.927 0l2.184 4.327 
+                                                            4.898.696c.441.062.612.636.282.95l-3.522 
+                                                            3.356.83 4.73c.078.443-.36.79-.746.592L8 
+                                                            13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                    fill="currentColor" class="bi bi-star-fill" style="color:#ebab08;"
+                                                    viewBox="0 0 16 16">
+                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 
+                                                            6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792
+                                                            c.197-.39.73-.39.927 0l2.184 4.327 
+                                                            4.898.696c.441.062.612.636.282.95l-3.522 
+                                                            3.356.83 4.73c.078.443-.36.79-.746.592L8 
+                                                            13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                    fill="currentColor" class="bi bi-star-fill" style="color:#ebab08;"
+                                                    viewBox="0 0 16 16">
+                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 
+                                                            6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792
+                                                            c.197-.39.73-.39.927 0l2.184 4.327 
+                                                            4.898.696c.441.062.612.636.282.95l-3.522 
+                                                            3.356.83 4.73c.078.443-.36.79-.746.592L8 
+                                                            13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                    fill="currentColor" class="bi bi-star-fill" style="color:#ebab08;"
+                                                    viewBox="0 0 16 16">
+                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 
+                                                            6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792
+                                                            c.197-.39.73-.39.927 0l2.184 4.327 
+                                                            4.898.696c.441.062.612.636.282.95l-3.522 
+                                                            3.356.83 4.73c.078.443-.36.79-.746.592L8 
+                                                            13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                    fill="currentColor" class="bi bi-star-fill" style="color:#ebab08;"
+                                                    viewBox="0 0 16 16">
+                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 
+                                                            6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792
+                                                            c.197-.39.73-.39.927 0l2.184 4.327 
+                                                            4.898.696c.441.062.612.636.282.95l-3.522 
+                                                            3.356.83 4.73c.078.443-.36.79-.746.592L8 
+                                                            13.187l-4.389 2.256z" />
+                                                </svg>
+                                            </div>
+
+                                            <!-- Review -->
+                                            <p class="lead fw-normal fs-5">
+                                                “ Working with several word themes and templates the last years only can
+                                                say this is best in every level use it for my reviews that I have
+                                                already are company and the reviews that I have already are all
+                                                excellent. Not only the design but the code ”
+                                            </p>
+
+                                            <!-- Author -->
+                                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./image copy 18.png" class="img-fluid rounded-circle"
+                                                        width="50" height="50" alt="">
+                                                    <div class="ms-3">
+                                                        <h5 class="h5 fw-semibold mb-0">Marvin McKinney</h5>
+                                                        <small class="fw-medium">Product Manager</small>
+                                                    </div>
+                                                </div>
+                                                <img src="./image copy 19.png" class="img-fluid" width="40" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Blog & Articles About Technology -->
+        <section>
+            <div class="container py-5">
+                <!-- Heading and Button Row -->
+                <div class="row align-items-center">
+                    <!-- Left Column (Title) -->
+                    <div class="col-12 col-md-8">
+                        <span class="lead text-primary fw-normal">Our Blogs</span>
+                        <h1 class="h1 display-4 fw-bold" style="color: #0a165e;">
+                            Recent Blog & Articles About Technology
+                        </h1>
+                    </div>
+                    <!-- Right Column (Button) -->
+                    <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+                        <button
+                            class="Button fs-5 fw-semibold bg-primary text-light px-4 py-3 border-0 hover-center-slide">
+                            <span>Select This Plan</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Blog Items -->
+                <div class="row g-5 py-5">
+                    <!-- Left Large Blog -->
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <img src="./image copy 20.png" class="img-fluid mb-4" alt="">
+                        <span class="fw-medium text-opacity-100" style="color: #585b6f;">
+                            Alom Khan
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg>
+                            8 Sep, 2025
+                        </span>
+                        <h3 class="headings mt-2">
+                            <a href="#" class="text-decoration-none fw-bold headings">
+                                Boost your Startup Business With our Digital Agency
+                            </a>
+                        </h3>
+                    </div>
+
+                    <!-- Right Side Blogs -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0 h-100">
+                            <!-- Image -->
+                            <img src="./image copy 21.png" class="card-img-top img-fluid" alt="">
+
+                            <!-- Card Body -->
+                            <div class="card-body px-0">
+                                <span class="fw-medium text-opacity-100" style="color: #585b6f;">
+                                    Alom Khan
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                        class="bi bi-dot" viewBox="0 0 16 16">
+                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                    </svg>
+                                    8 Sep, 2025
+                                </span>
+                                <h4 class="headings mt-2">
+                                    <a href="#" class="text-decoration-none headings">
+                                        Planning your Online Business Goals With a Specialist
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <img src="./image copy 4.png" class="img-fluid mb-4" alt="">
+                        <span class="fw-medium text-opacity-100" style="color: #585b6f;">
+                            Alom Khan
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg>
+                            8 Sep, 2025
+                        </span>
+                        <h4 class="headings mt-2">
+                            <a href="#" class="text-decoration-none headings">
+                                Including Animation In Your Design System
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="pt-5 pb-3" style="background-color: #0a165e; background-image: url(./image\ copy\ 17.png);">
+            <div class="container py-5 border-primary border-opacity-50 border-bottom">
+                <!-- Newsletter Section -->
+                <div class="p-5 bg-primary text-light custom-button shadow-lg">
+                    <div class="row py-5 g-5 align-items-center">
+                        <!-- Heading -->
+                        <div class="col-12 col-lg-7">
+                            <h1 class="fw-bold display-4">Subscribe to Our Newsletter</h1>
+                        </div>
+
+                        <!-- Input + Button -->
+                        <div class="col-12 col-lg-5">
+                            <div class="position-relative w-100">
+                                <input type="email" class="form-control p-3 pe-5 lead Button"
+                                    placeholder="Enter your email" aria-label="Email">
+                                <button
+                                    class="Button lead fs-5 fw-semibold bg-primary text-light py-2 px-3 border-0 hover-center-slide position-absolute top-50 end-0 translate-middle-y me-2">
+                                    <span>Submit Now</span>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-5 py-5">
+                    <!-- Logo + Contact -->
+                    <div class="col-12 col-md-6 col-lg-4 text-light mb-5">
+                        <div class="mb-4">
+                            <a href="#" class="text-decoration-none">
+                                <img src="./alpha-removebg-preview.png" class="img-fluid" alt="Logo"
+                                    style="max-width: 180px;">
+                            </a>
+                        </div>
+                        <p class="fw-normal">
+                            Each demo built with Teba will look different. You can customize almost
+                            anything about the appearance of your website with only a few clicks.
+                        </p>
+                        <div class="d-flex flex-column">
+                            <a href="#"
+                                class="d-inline-flex align-items-center text-decoration-none text-light mt-3 fw-normal"
+                                style="font-size: large;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-telephone-fill me-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg>
+                                <span>123-456-7890</span>
+                            </a>
+
+                            <a href="#"
+                                class="d-inline-flex align-items-center text-decoration-none text-light mt-3 fw-normal"
+                                style="font-size: large;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-envelope-fill me-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                                </svg>
+                                <span>faizandevx@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-12 col-md-6 col-lg-2 pt-4">
+                        <h5 class="fw-bolder mb-4 text-light">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">About
+                                    Us</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Our
+                                    Team</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Pricing
+                                    Plans</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Blogs</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Contact
+                                    Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="col-12 col-md-6 col-lg-3 pt-4">
+                        <h5 class="fw-bolder mb-4 text-light">Services</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">UI/UX
+                                    Design</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">App
+                                    Development</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Digital
+                                    Marketing</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">We
+                                    Development</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Cyber
+                                    Security</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Information -->
+                    <div class="col-12 col-md-6 col-lg-3 pt-4">
+                        <h5 class="fw-bolder mb-4 text-light">Information</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Working
+                                    Process</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Privacy
+                                    Policy</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Terms &
+                                    Conditions</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <section>
+                <div class="container text-light pt-3">
+                    <div class="row align-items-center">
+
+                        <!-- Left Side -->
+                        <div class="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
+                            <span class="fw-normal">
+                                © 2025
+                                <a href="#" class="text-decoration-none fw-normal">Alpha Soft</a>
+                                All Rights Reserved, Created by
+                                <a href="#" class="text-decoration-none fw-normal">Faizan Ali</a>
+                            </span>
+                        </div>
+
+                        <!-- Right Side -->
+                        <div class="col-12 col-md-6 text-center text-md-end">
+                            <div class="d-flex justify-content-center justify-content-md-end gap-2">
+
+                                <!-- Facebook -->
+                                <a href="#"
+                                    class="arrow-btn btn btn-light Button align-items-center justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 
+                                                3.603-.002 8.05c0 4.017 2.926 7.347 
+                                                6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
+                                                1.195-3.131 3.022-3.131.876 0 1.791.157 
+                                                1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 
+                                                1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 
+                                                6.75-3.934 6.75-7.951" />
+                                    </svg>
+                                </a>
+
+                                <!-- LinkedIn -->
+                                <a href="#" class="bg-light arrow-btn Button align-items-center justify-content-center"
+                                    style="color: #0a165e;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path d="M0 1.146C0 .513.526 0 1.175 
+                                                0h13.65C15.474 0 16 .513 16 
+                                                1.146v13.708c0 .633-.526 1.146-1.175 
+                                                1.146H1.175C.526 16 0 15.487 0 
+                                                14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 
+                                                0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 
+                                                3.226 2.4 3.934c0 .694.521 1.248 1.327 
+                                                1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 
+                                                1.232-.878.869 0 1.216.662 1.216 
+                                                1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 
+                                                0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 
+                                                0 7.225 0 7.225z" />
+                                    </svg>
+                                </a>
+
+                                <!-- Twitter -->
+                                <a href="#" class="bg-light arrow-btn Button align-items-center justify-content-center"
+                                    style="color: #0a165e;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bi bi-twitter"
+                                        viewBox="0 0 16 16">
+                                        <path d="M5.026 15c6.038 0 9.341-5.003 
+                                                9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 
+                                                0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 
+                                                0 0 0 1.447-1.817 6.5 6.5 0 0 
+                                                1-2.087.793A3.286 3.286 0 0 0 7.875 
+                                                6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 
+                                                0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 
+                                                6.575v.045a3.29 3.29 0 0 0 2.632 
+                                                3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 
+                                                1-.614-.057 3.28 3.28 0 0 0 3.067 
+                                                2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 
+                                                1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                                    </svg>
+                                </a>
+
+                                <!-- Instagram -->
+                                <a href="#" class="bg-light arrow-btn Button align-items-center justify-content-center"
+                                    style="color: #0a165e;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path d="M8 0C5.829 0 5.556.01 
+                                                4.703.048 3.85.088 3.269.222 
+                                                2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 
+                                                3.9 0 0 0 .42 2.76C.222 
+                                                3.268.087 3.85.048 4.7.01 5.555 
+                                                0 5.827 0 8.001c0 2.172.01 2.444.048 
+                                                3.297.04.852.174 1.433.372 
+                                                1.942.205.526.478.972.923 
+                                                1.417.444.445.89.719 
+                                                1.416.923.51.198 1.09.333 
+                                                1.942.372C5.555 15.99 5.827 16 
+                                                8 16s2.444-.01 3.298-.048c.851-.04 
+                                                1.434-.174 1.943-.372a3.9 3.9 0 0 
+                                                0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 
+                                                10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 
+                                                3.9 0 0 0-.923-1.417A3.9 3.9 0 0 
+                                                0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 
+                                                10.172 0 7.998 0zm-.717 
+                                                1.442h.718c2.136 0 2.389.007 
+                                                3.232.046.78.035 1.204.166 
+                                                1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 
+                                                1.485.039.843.047 1.096.047 
+                                                3.231s-.008 2.389-.047 
+                                                3.232c-.035.78-.166 1.203-.275 
+                                                1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 
+                                                2.515-.045zm4.988 1.328a.96.96 0 1 
+                                                0 0 1.92.96.96 0 0 0 0-1.92m-4.27 
+                                                1.122a4.109 4.109 0 1 0 0 8.217 4.109 
+                                                4.109 0 0 0 0-8.217m0 
+                                                1.441a2.667 2.667 0 1 1 0 5.334 
+                                                2.667 2.667 0 0 1 0-5.334" />
+                                    </svg>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

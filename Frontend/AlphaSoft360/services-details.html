@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Services Details</title>
+</head>
+
+<body class="m-auto">
+
+    <header>
+        <!-- TOP NAVBAR (Contact + Social) -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom py-2">
+            <div class="container-fluid">
+                <div class="d-flex d-md-none justify-content-center mb-2">
+                    <a href="mailto:faizandevx@gmail.com" class="text-decoration-none fw-semibold"
+                        style="color: #0a165e;">
+                        faizandevx@gmail.com
+                    </a>
+                </div>
+                <!-- Toggler for top navbar -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topbarMenu"
+                    aria-controls="topbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Left: Contact Info -->
+                <div class="collapse navbar-collapse" id="topbarMenu">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <!-- Phone -->
+                        <li class="nav-item d-flex align-items-center pe-5 border-end border-2 border-dark"
+                            style="color: #0a165e;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-telephone-fill me-1" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                            </svg>
+                            <a href="#" class="text-decoration-none bg-text-color"
+                                style="color: #0a165e;">+923473057550</a>
+                        </li>
+
+                        <!-- Email -->
+                        <li class="nav-item d-flex align-items-center px-5 border-end border-2 border-dark"
+                            style="color: #0a165e;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-envelope-fill me-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                            </svg>
+                            <a href="mailto:faizandevx@gmail.com" class="text-decoration-none bg-text-color"
+                                style="color: #0a165e;">
+                                faizandevx@gmail.com
+                            </a>
+                        </li>
+
+                        <!-- Address -->
+                        <li class="nav-item d-flex align-items-center px-5" style="color: #0a165e;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-geo-alt-fill me-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                            </svg>
+                            <span class="">
+                                <a href="#" class="text-decoration-none bg-text-color" style="color: #0a165e;">Pak
+                                    Avenue</a></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right: Social Icons -->
+                <ul class="navbar-nav flex-row gap-2">
+                    <!-- Facebook -->
+                    <li class="nav-item">
+                        <a href="#"
+                            class="text-color nav-link p-0 border rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:36px;height:36px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 
+                                                    3.603-.002 8.05c0 4.017 2.926 7.347 
+                                                    6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
+                                                    1.195-3.131 3.022-3.131.876 0 1.791.157 
+                                                    1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 
+                                                    1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 
+                                                    6.75-3.934 6.75-7.951" />
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Twitter -->
+                    <li class="nav-item">
+                        <a href="#"
+                            class="text-color nav-link p-0 border rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:36px;height:36px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 
+                                                    9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 
+                                                    0 0 16 3.542a6.7 6.7 0 0 
+                                                    1-1.889.518 3.3 3.3 0 0 
+                                                    0 1.447-1.817 6.5 6.5 0 0 
+                                                    1-2.087.793A3.286 3.286 0 0 
+                                                    0 7.875 6.03a9.32 9.32 0 0 
+                                                    1-6.767-3.429 3.29 3.29 0 0 
+                                                    0 1.018 4.382A3.3 3.3 0 0 
+                                                    1 .64 6.575v.045a3.29 3.29 0 0 
+                                                    0 2.632 3.218 3.2 3.2 0 0 
+                                                    1-.865.115 3 3 0 0 
+                                                    1-.614-.057 3.28 3.28 0 0 
+                                                    0 3.067 2.277A6.6 6.6 0 0 
+                                                    1 .78 13.58a6 6 0 0 
+                                                    1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- LinkedIn -->
+                    <li class="nav-item">
+                        <a href="#"
+                            class="text-color nav-link p-0 border rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:36px;height:36px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 
+                                                    0 16 .513 16 1.146v13.708c0 .633-.526 
+                                                    1.146-1.175 1.146H1.175C.526 16 0 
+                                                    15.487 0 14.854zm4.943 
+                                                    12.248V6.169H2.542v7.225zm-1.2-8.212c.837 
+                                                    0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 
+                                                    3.226 2.4 3.934c0 .694.521 1.248 
+                                                    1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 
+                                                    1.232-.878.869 0 1.216.662 1.216 
+                                                    1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 
+                                                    0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 
+                                                    0 7.225 0 7.225z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Instagram -->
+                    <li class="nav-item">
+                        <a href="#"
+                            class="text-color nav-link p-0 border rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:36px;height:36px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 
+                                                    3.85.088 3.269.222 2.76.42a3.9 3.9 
+                                                    0 0 0-1.417.923A3.9 3.9 0 0 
+                                                    0 .42 2.76C.222 3.268.087 3.85.048 
+                                                    4.7.01 5.555 0 5.827 0 8.001c0 
+                                                    2.172.01 2.444.048 3.297.04.852.174 
+                                                    1.433.372 1.942.205.526.478.972.923 
+                                                    1.417.444.445.89.719 1.416.923.51.198 
+                                                    1.09.333 1.942.372C5.555 15.99 5.827 
+                                                    16 8 16s2.444-.01 3.298-.048c.851-.04 
+                                                    1.434-.174 1.943-.372a3.9 3.9 0 0 
+                                                    0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 
+                                                    10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 
+                                                    3.9 0 0 0-.923-1.417A3.9 3.9 0 0 
+                                                    0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 
+                                                    10.172 0 7.998 0zm-.717 1.442h.718c2.136 
+                                                    0 2.389.007 3.232.046.78.035 1.204.166 
+                                                    1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 
+                                                    1.485.039.843.047 1.096.047 3.231s-.008 
+                                                    2.389-.047 3.232c-.035.78-.166 1.203-.275 
+                                                    1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 
+                                                    0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 
+                                                    1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 
+                                                    1.328a.96.96 0 1 0 0 1.92.96.96 
+                                                    0 0 0 0-1.92m-4.27 1.122a4.109 
+                                                    4.109 0 1 0 0 8.217 4.109 4.109 
+                                                    0 0 0 0-8.217m0 1.441a2.667 2.667 
+                                                    0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- MAIN NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-0 pe-3">
+            <div class="container-fluid p-0">
+                <!-- Brand -->
+                <div class="svg-wrapper position-relative">
+                    <svg viewBox="0 0 384 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                        <path
+                            d="M324.5 51.2295C313.7 90.2459 287.333 100 275.5 100H0V0H384C368.667 0.819672 335.3 12.2131 324.5 51.2295Z"
+                            fill="#2B4DFF" />
+                    </svg>
+                    <img src="alpha-removebg-preview.png" alt="Logo"
+                        class="position-absolute top-50 start-50 translate-middle">
+                </div>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+                    aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 fw-medium fs-6">
+                        <li class="nav-item"><a class="nav-link" style="color: #0a165e;" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #0a165e;" href="about.html">About Us</a>
+                        </li>
+
+                        <!-- Services Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color: #0a165e;" href="#" id="servicesDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown rounded-0 border-0 mt-3"
+                                aria-labelledby="servicesDropdown" style="color: #0a165e;">
+                                <li><a class="dropdown-item custom-item" href="./services.html">Service</a></li>
+                                <li><a class="dropdown-item custom-item" href="./services-details.html">Service
+                                        Details</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Pages Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color: #0a165e;" href="#" id="pagesDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu custom-dropdown rounded-0 border-0 mt-3"
+                                aria-labelledby="pagesDropdown" style="color: #0a165e;">
+                                <li><a class="dropdown-item custom-item" href="./team.html">Team</a></li>
+                                <li><a class="dropdown-item custom-item" href="./team-details.html">Team Details</a>
+                                </li>
+                                <li><a class="dropdown-item custom-item" href="./pricing.html">Price</a></li>
+                                <li><a class="dropdown-item custom-item" href="./project.html">Project</a></li>
+                                <li><a class="dropdown-item custom-item" href="./project-details.html">Project
+                                        Details</a></li>
+                                <li><a class="dropdown-item custom-item" href="./faq’s.html">FAQ</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Blog Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color: #0a165e;" href="#" id="blogDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu custom-dropdown rounded-0 border-0 mt-3"
+                                aria-labelledby="blogDropdown" style="color: #0a165e;">
+                                <li><a class="dropdown-item custom-item" href="#">Blog Grid</a></li>
+                                <li><a class="dropdown-item custom-item" href="#">Blog List</a></li>
+                                <li><a class="dropdown-item custom-item" href="#">Blog Details</a></li>
+                                <li><a class="dropdown-item custom-item" href="#">Project</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" style="color: #0a165e;"
+                                href="./contact.html">Contact</a></li>
+                    </ul>
+
+                    <!-- Right Side Buttons -->
+                    <div class="d-flex align-items-center">
+                        <!-- Search -->
+                        <a href="#"
+                            class="btn btn-light border rounded-circle d-flex align-items-center justify-content-center me-3"
+                            style="width:40px;height:40px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001
+                                            q.044.06.098.115l3.85 3.85a1 1 0 0 0
+                                            1.415-1.414l-3.85-3.85a1 1 0 0
+                                            0-.115-.1zM12 6.5a5.5 5.5 0 1
+                                            1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </a>
+                        <!-- CTA -->
+                        <button class="Button fw-semibold fs-6 bg-primary text-light border-0 hover-center-slide">
+                            <span>Get A Quote</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="w-100 position-relative text-light d-flex align-items-center justify-content-center"
+                style="background-image: url('./aboutbgimage.png'); background-size: cover; background-position: center; height: 70vh;">
+
+                <!-- Overlay -->
+                <div class="position-absolute top-0 start-0 w-100 h-100"
+                    style="background-color: #0a165e; opacity: 0.8;">
+                </div>
+
+                <!-- Content -->
+                <div class="position-relative text-center px-3">
+                    <h1 class="fw-bold display-1">Service Details</h1>
+                    <a href="index.html" class="text-decoration-none lead text-light text-opacity-75">Home </a>
+                    <span class="mx-2"> ></span>
+                    <span> Service Details</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container py-5">
+                <div class="row g-5 py-5">
+                    <div class="col-12 col-lg-4">
+                        <div class="accordion" id="servicesAccordion">
+
+                            <!-- Item 1 -->
+                            <div class="accordion-item border-0 shadow-sm mb-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed rounded-0 fw-semibold opacity-100"
+                                        style="background-color: #f0f0f0; color: #0a165e;" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#serviceOne" aria-expanded="false"
+                                        aria-controls="serviceOne">
+                                        Managed IT Services
+                                    </button>
+                                </h2>
+                                <div id="serviceOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body">
+                                        We provide 24/7 monitoring, troubleshooting, and maintenance to ensure your IT
+                                        infrastructure runs smoothly.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="accordion-item border-0 p-0 Button shadow-sm mb-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed Button opacity-100 fw-semibold"
+                                        style="background-color: #f0f0f0; color: #0a165e;" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#serviceTwo" aria-expanded="false"
+                                        aria-controls="serviceTwo">
+                                        Cloud Services
+                                    </button>
+                                </h2>
+                                <div id="serviceTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body">
+                                        Scalable and secure cloud solutions including storage, hosting, and migration
+                                        services.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="accordion-item border-0 p-0 Button shadow-sm mb-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed Button opacity-100 fw-semibold"
+                                        style="background-color: #f0f0f0; color: #0a165e;" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#serviceThree" aria-expanded="false"
+                                        aria-controls="serviceThree">
+                                        Machine Learning
+                                    </button>
+                                </h2>
+                                <div id="serviceThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body">
+                                        Intelligent ML models to automate decision-making and improve business
+                                        processes.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 4 -->
+                            <div class="accordion-item border-0 p-0 Button shadow-sm mb-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed Button opacity-100 fw-semibold"
+                                        style="background-color: #f0f0f0; color: #0a165e;" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#serviceFour" aria-expanded="false"
+                                        aria-controls="serviceFour">
+                                        Data Security
+                                    </button>
+                                </h2>
+                                <div id="serviceFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body">
+                                        Advanced security solutions to protect your sensitive business data from cyber
+                                        threats.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 5 -->
+                            <div class="accordion-item border-0 shadow-sm mb-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed rounded-0 opacity-100 fw-semibold"
+                                        style="background-color: #f0f0f0; color: #0a165e;" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#serviceFive" aria-expanded="false"
+                                        aria-controls="serviceFive">
+                                        Web Analysis
+                                    </button>
+                                </h2>
+                                <div id="serviceFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#servicesAccordion">
+                                    <div class="accordion-body">
+                                        Detailed analytics and reporting to optimize your web performance and SEO.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="Button p-5 mt-5 shadow-sm" style="background-color: #f0f0f0;">
+                            <div class="mb-4">
+                                <h4 class="h4 fw-bold mb-4" style="color: #0a165e;">Need Any Help?</h4>
+                                <span class="fs-6 text-secondary opacity-100 fw-normal">Need Any Help, Call Us 24/7 For
+                                    Support</span>
+                            </div>
+
+                            <div class="d-flex gap-3">
+                                <div class="rounded-circle d-flex justify-content-center align-items-center"
+                                    style="width: 60px; height: 60px; border: 1px solid #0a165e;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                        class="bi bi-telephone-fill" style="color: #0a165e;" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                    </svg>
+                                </div>
+                                <div class="">
+                                    <span class="text-secondary fw-normal">Call Us</span>
+                                    <h4 class="h4 mt-2" style="color: #0a165e;"><a href="#" class="text-decoration-none"
+                                            style="color: #0a165e;">03473057550</a></h4>
+                                </div>
+                            </div>
+
+                            <div class="d-flex gap-3 mt-4">
+                                <div class="rounded-circle d-flex justify-content-center align-items-center"
+                                    style="width: 60px; height: 60px; border: 1px solid #0a165e;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        style="color: #0a165e;" fill="currentColor" class="bi bi-envelope-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                                    </svg>
+                                </div>
+                                <div class="">
+                                    <span class="text-secondary fw-normal">Email</span>
+                                    <h4 class="h4 mt-2"><a href="#" class="text-decoration-none"
+                                            style="color: #0a165e;">info@example.com</a></h4>
+                                </div>
+                            </div>
+
+                            <div class="d-flex gap-3 mt-4">
+                                <div class="rounded-circle d-flex justify-content-center align-items-center"
+                                    style="width: 60px; height: 60px; border: 1px solid #0a165e;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        style="color: #0a165e;" fill="currentColor" class="bi bi-geo-alt-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                                    </svg>
+                                </div>
+
+                                <div class="">
+                                    <span class="text-secondary fw-normal">Office Address</span>
+                                    <h4 class="h4 mt-2"><a href="#" class="text-decoration-none"
+                                            style="color: #0a165e;">360 Alpha Soft</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-8">
+                        <div>
+                            <img src="./image copy 28.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="mt-5">
+                            <h1 class="h1 fw-bold" style="color: #0a165e;">Data Security</h1>
+                            <p class="fw-normal text-secondary opacity-100 fs-5 mt-3">When an unknown printer took ar
+                                galley offer
+                                type year anddey scrambled make aewer specimen a book bethas survived not only five when
+                                anner year unknown printer eed little help from friend from time to time. Although we
+                                offer the one-stop convenience. unknown printer took galley type year anddey unknown
+                                printer took scrambled.</p>
+
+                            <p class="fw-normal text-secondary opacity-100 fs-5 mb-4">When an unknown printer took ar
+                                galley offer
+                                type year anddey scrambled make aewer specimen a book bethas survived not only five when
+                                anner year unknown printer eed little help from friend from time to time. Although we
+                                offer the one-stop convenience. unknown printer took galley type year anddey unknown
+                                printer took scrambled.</p>
+                        </div>
+                        <div>
+                            <div class="d-flex gap-3 mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                    class="bi bi-check-circle-fill text-primary" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                </svg>
+                                <p class="lead fw-medium text-secondary">Sed nisl fusce est consequat mollis habitasse
+                                    facilisi rutrum
+                                    nisle.</p>
+                            </div>
+                            <div class="d-flex gap-3 mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                    class="bi bi-check-circle-fill text-primary" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                </svg>
+                                <p class="lead fw-medium text-secondary">Cubilia quisque ad accumsan lorem platea
+                                    elementum nisl curabitur dapibus.</p>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                    class="bi bi-check-circle-fill text-primary" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                </svg>
+                                <p class="lead fw-medium text-secondary">Egestas magnis sapien hack vehicula condimentum
+                                    dui enim justo site.</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <img src="./image copy 29.png" class="img-fluid m-2" alt="">
+                            <img src="./image copy 30.png" class="img-fluid m-2" alt="">
+                        </div>
+
+                        <div>
+                            <p class="fw-normal text-secondary opacity-100 fs-5 mt-5">When an unknown printer took ar
+                                galley offer
+                                type year anddey scrambled make aewer specimen a book bethas survived not only five when
+                                anner year unknown printer eed little help from friend from time to time. Although we
+                                offer the one-stop convenience. unknown printer took galley type year anddey unknown
+                                printer took scrambled.</p>
+                        </div>
+
+                        <div class="mt-4">
+                            <h2 class="h2 fw-bold" style="color: #0a165e;">Frequently Asked Question</h2>
+                        </div>
+
+                        <div class="mt-5" id="accordions">
+                            <div class="accordion" id="servicesAccordion">
+
+                                <!-- Item 1 -->
+                                <div class="accordion-item border-0 shadow-sm mb-2">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed p-4 fs-5 fw-medium rounded-1 opacity-100"
+                                            style="background-color: #f0f0f0; color: #0a165e;" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#serviceOne" aria-expanded="false"
+                                            aria-controls="serviceOne">
+                                            What is vision for the future?
+                                        </button>
+                                    </h2>
+                                    <div id="serviceOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#servicesAccordion">
+                                        <div class="accordion-body">
+                                            Augue enim ut sem vulputate nunc eu ultrices nec bibendum. Nullam non at eu
+                                            tincidunt non purus vitae.leo nam quam elit imperdiet. Sit malesuada massa
+                                            scelerisque tincidunt. faucibus Sit dolor ultricie phasellus viverra feugiat
+                                            enim nisl.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Item 2 -->
+                                <div class="accordion-item border-0 shadow-sm mb-2">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed p-4 fs-5 fw-medium rounded-1 opacity-100"
+                                            style="background-color: #f0f0f0; color: #0a165e;" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#serviceTwo" aria-expanded="false"
+                                            aria-controls="serviceTwo">
+                                            Do you offer free resources?
+                                        </button>
+                                    </h2>
+                                    <div id="serviceTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#servicesAccordion">
+                                        <div class="accordion-body">
+                                            Augue enim ut sem vulputate nunc eu ultrices nec bibendum. Nullam non at eu
+                                            tincidunt non purus vitae.leo nam quam elit imperdiet. Sit malesuada massa
+                                            scelerisque tincidunt. faucibus Sit dolor ultricie phasellus viverra feugiat
+                                            enim nisl.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Item 3 -->
+                                <div class="accordion-item border-0 shadow-sm mb-2">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed p-4 fs-5 fw-medium rounded-1 opacity-100"
+                                            style="background-color: #f0f0f0; color: #0a165e;" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#serviceThree"
+                                            aria-expanded="false" aria-controls="serviceThree">
+                                            Can help to find investors?
+                                        </button>
+                                    </h2>
+                                    <div id="serviceThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#servicesAccordion">
+                                        <div class="accordion-body">
+                                            Augue enim ut sem vulputate nunc eu ultrices nec bibendum. Nullam non at eu
+                                            tincidunt non purus vitae.leo nam quam elit imperdiet. Sit malesuada massa
+                                            scelerisque tincidunt. faucibus Sit dolor ultricie phasellus viverra feugiat
+                                            enim nisl.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Item 4 -->
+                                <div class="accordion-item border-0 shadow-sm mb-2">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed p-4 fs-5 fw-medium rounded-1 opacity-100"
+                                            style="background-color: #f0f0f0; color: #0a165e;" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#serviceFour"
+                                            aria-expanded="false" aria-controls="serviceFour">
+                                            Can help to find investors?
+                                        </button>
+                                    </h2>
+                                    <div id="serviceFour" class="accordion-collapse collapse"
+                                        data-bs-parent="#servicesAccordion">
+                                        <div class="accordion-body">
+                                            Augue enim ut sem vulputate nunc eu ultrices nec bibendum. Nullam non at eu
+                                            tincidunt non purus vitae.leo nam quam elit imperdiet. Sit malesuada massa
+                                            scelerisque tincidunt. faucibus Sit dolor ultricie phasellus viverra feugiat
+                                            enim nisl.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Item 5 -->
+                                <div class="accordion-item border-0 shadow-sm mb-2">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed p-4 fs-5 fw-medium rounded-1 opacity-100"
+                                            style="background-color: #f0f0f0; color: #0a165e;" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#serviceFive"
+                                            aria-expanded="false" aria-controls="serviceFive">
+                                            What services do you offer?
+                                        </button>
+                                    </h2>
+                                    <div id="serviceFive" class="accordion-collapse collapse"
+                                        data-bs-parent="#servicesAccordion">
+                                        <div class="accordion-body">
+                                            Augue enim ut sem vulputate nunc eu ultrices nec bibendum. Nullam non at eu
+                                            tincidunt non purus vitae.leo nam quam elit imperdiet. Sit malesuada massa
+                                            scelerisque tincidunt. faucibus Sit dolor ultricie phasellus viverra feugiat
+                                            enim nisl.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="pt-5 pb-3" style="background-color: #0a165e; background-image: url(./image\ copy\ 17.png);">
+            <div class="container py-5 border-primary border-opacity-50 border-bottom">
+                <!-- Newsletter Section -->
+                <div class="p-5 bg-primary text-light custom-button shadow-lg">
+                    <div class="row py-5 g-5 align-items-center">
+                        <!-- Heading -->
+                        <div class="col-12 col-lg-7">
+                            <h1 class="fw-bold display-4">Subscribe to Our Newsletter</h1>
+                        </div>
+
+                        <!-- Input + Button -->
+                        <div class="col-12 col-lg-5">
+                            <div class="position-relative w-100">
+                                <input type="email" class="form-control p-3 pe-5 lead Button"
+                                    placeholder="Enter your email" aria-label="Email">
+                                <button
+                                    class="Button lead fs-5 fw-semibold bg-primary text-light py-2 px-3 border-0 hover-center-slide position-absolute top-50 end-0 translate-middle-y me-2">
+                                    <span>Submit Now</span>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-5 py-5">
+                    <!-- Logo + Contact -->
+                    <div class="col-12 col-md-6 col-lg-4 text-light mb-5">
+                        <div class="mb-4">
+                            <a href="#" class="text-decoration-none">
+                                <img src="./alpha-removebg-preview.png" class="img-fluid" alt="Logo"
+                                    style="max-width: 180px;">
+                            </a>
+                        </div>
+                        <p class="fw-normal">
+                            Each demo built with Teba will look different. You can customize almost
+                            anything about the appearance of your website with only a few clicks.
+                        </p>
+                        <div class="d-flex flex-column">
+                            <a href="#"
+                                class="d-inline-flex align-items-center text-decoration-none text-light mt-3 fw-normal"
+                                style="font-size: large;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-telephone-fill me-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg>
+                                <span>123-456-7890</span>
+                            </a>
+
+                            <a href="#"
+                                class="d-inline-flex align-items-center text-decoration-none text-light mt-3 fw-normal"
+                                style="font-size: large;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-envelope-fill me-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                                </svg>
+                                <span>faizandevx@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-12 col-md-6 col-lg-2 pt-4">
+                        <h5 class="fw-bolder mb-4 text-light">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">About
+                                    Us</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Our
+                                    Team</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Pricing
+                                    Plans</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Blogs</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Contact
+                                    Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="col-12 col-md-6 col-lg-3 pt-4">
+                        <h5 class="fw-bolder mb-4 text-light">Services</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">UI/UX
+                                    Design</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">App
+                                    Development</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Digital
+                                    Marketing</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">We
+                                    Development</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Cyber
+                                    Security</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Information -->
+                    <div class="col-12 col-md-6 col-lg-3 pt-4">
+                        <h5 class="fw-bolder mb-4 text-light">Information</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Working
+                                    Process</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Privacy
+                                    Policy</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">Terms &
+                                    Conditions</a>
+                            </li>
+                            <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
+                                    style="font-size: large;">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <section>
+                <div class="container text-light pt-3">
+                    <div class="row align-items-center">
+
+                        <!-- Left Side -->
+                        <div class="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
+                            <span class="fw-normal">
+                                © 2025
+                                <a href="#" class="text-decoration-none fw-normal">Alpha Soft</a>
+                                All Rights Reserved, Created by
+                                <a href="#" class="text-decoration-none fw-normal">Faizan Ali</a>
+                            </span>
+                        </div>
+
+                        <!-- Right Side -->
+                        <div class="col-12 col-md-6 text-center text-md-end">
+                            <div class="d-flex justify-content-center justify-content-md-end gap-2">
+
+                                <!-- Facebook -->
+                                <a href="#"
+                                    class="arrow-btn btn btn-light Button align-items-center justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 
+                                                3.603-.002 8.05c0 4.017 2.926 7.347 
+                                                6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
+                                                1.195-3.131 3.022-3.131.876 0 1.791.157 
+                                                1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 
+                                                1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 
+                                                6.75-3.934 6.75-7.951" />
+                                    </svg>
+                                </a>
+
+                                <!-- LinkedIn -->
+                                <a href="#" class="bg-light arrow-btn Button align-items-center justify-content-center"
+                                    style="color: #0a165e;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path d="M0 1.146C0 .513.526 0 1.175 
+                                                0h13.65C15.474 0 16 .513 16 
+                                                1.146v13.708c0 .633-.526 1.146-1.175 
+                                                1.146H1.175C.526 16 0 15.487 0 
+                                                14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 
+                                                0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 
+                                                3.226 2.4 3.934c0 .694.521 1.248 1.327 
+                                                1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 
+                                                1.232-.878.869 0 1.216.662 1.216 
+                                                1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 
+                                                0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 
+                                                0 7.225 0 7.225z" />
+                                    </svg>
+                                </a>
+
+                                <!-- Twitter -->
+                                <a href="#" class="bg-light arrow-btn Button align-items-center justify-content-center"
+                                    style="color: #0a165e;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bi bi-twitter"
+                                        viewBox="0 0 16 16">
+                                        <path d="M5.026 15c6.038 0 9.341-5.003 
+                                                9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 
+                                                0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 
+                                                0 0 0 1.447-1.817 6.5 6.5 0 0 
+                                                1-2.087.793A3.286 3.286 0 0 0 7.875 
+                                                6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 
+                                                0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 
+                                                6.575v.045a3.29 3.29 0 0 0 2.632 
+                                                3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 
+                                                1-.614-.057 3.28 3.28 0 0 0 3.067 
+                                                2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 
+                                                1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                                    </svg>
+                                </a>
+
+                                <!-- Instagram -->
+                                <a href="#" class="bg-light arrow-btn Button align-items-center justify-content-center"
+                                    style="color: #0a165e;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path d="M8 0C5.829 0 5.556.01 
+                                                4.703.048 3.85.088 3.269.222 
+                                                2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 
+                                                3.9 0 0 0 .42 2.76C.222 
+                                                3.268.087 3.85.048 4.7.01 5.555 
+                                                0 5.827 0 8.001c0 2.172.01 2.444.048 
+                                                3.297.04.852.174 1.433.372 
+                                                1.942.205.526.478.972.923 
+                                                1.417.444.445.89.719 
+                                                1.416.923.51.198 1.09.333 
+                                                1.942.372C5.555 15.99 5.827 16 
+                                                8 16s2.444-.01 3.298-.048c.851-.04 
+                                                1.434-.174 1.943-.372a3.9 3.9 0 0 
+                                                0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 
+                                                10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 
+                                                3.9 0 0 0-.923-1.417A3.9 3.9 0 0 
+                                                0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 
+                                                10.172 0 7.998 0zm-.717 
+                                                1.442h.718c2.136 0 2.389.007 
+                                                3.232.046.78.035 1.204.166 
+                                                1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 
+                                                1.485.039.843.047 1.096.047 
+                                                3.231s-.008 2.389-.047 
+                                                3.232c-.035.78-.166 1.203-.275 
+                                                1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 
+                                                2.515-.045zm4.988 1.328a.96.96 0 1 
+                                                0 0 1.92.96.96 0 0 0 0-1.92m-4.27 
+                                                1.122a4.109 4.109 0 1 0 0 8.217 4.109 
+                                                4.109 0 0 0 0-8.217m0 
+                                                1.441a2.667 2.667 0 1 1 0 5.334 
+                                                2.667 2.667 0 0 1 0-5.334" />
+                                    </svg>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

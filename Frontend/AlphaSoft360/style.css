@@ -1,0 +1,734 @@
+.text-color {
+    color: #585b6f;
+    background-color: #eff0f0;
+}
+
+.text-color:hover {
+    background-color: #2b4dff;
+    color: #fff !important;
+}
+
+/* Apply the blur effect on the background image */
+.carousel-background img {
+    object-fit: cover;
+    filter: blur(4px);
+    /* Adjust the blur level */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* Ensure the image stays behind the content */
+}
+
+/* Optional: Add a dark overlay to enhance text visibility */
+.carousel-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    /* Dark overlay, adjust opacity as needed */
+    z-index: 0;
+}
+
+
+.svg-color {
+    color: #fff;
+    background-color: #0a165e;
+}
+
+.svg-color:hover {
+    background-color: #2b4dff !important;
+    color: #fff !important;
+}
+
+.bg-text-color {
+    color: #0a165e !important;
+}
+
+.bg-text-color:hover {
+    color: #2b4dff !important;
+}
+
+:root {
+    --brand-color: #0a165e;
+}
+
+/* Enable dropdowns on hover for desktop */
+@media (min-width: 992px) {
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+/* Smooth fade animation */
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+/* Dropdown style */
+.dropdown-menu {
+    border-radius: .5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+.dropdown-item:hover {
+    background-color: #0d6efd;
+    color: #fff !important;
+    border-radius: .375rem;
+}
+
+/* Logo wrapper */
+.svg-wrapper {
+    width: 100%;
+    max-width: 384px;
+    aspect-ratio: 384/100;
+}
+
+.svg-wrapper svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.svg-wrapper img {
+    max-height: 60%;
+    width: auto;
+}
+
+.custom-input {
+    border-radius: 8px;
+    /* rounded corners */
+    padding-right: 120px;
+    /* space for button */
+}
+
+.button {
+    border-end-end-radius: 30%;
+    border-end-start-radius: 0%;
+    border-start-end-radius: 0%;
+    border-start-start-radius: 30%;
+    /* border: 0px; */
+    padding: 15px;
+}
+
+.Button {
+    text-decoration: none;
+    border-end-end-radius: 20px;
+    border-end-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-start-start-radius: 20px;
+    border: 0px;
+    padding: 15px;
+}
+
+.custom-button {
+    /* background-color: #2b4dff !important; */
+    /* color: white !important; */
+    text-decoration: none;
+    border-end-end-radius: 50px;
+    border-end-start-radius: 0%;
+    border-start-end-radius: 0%;
+    border-start-start-radius: 50px;
+    border: 0px;
+    padding: 15px;
+}
+
+/* Card default */
+/* .custom-button {
+            border: 1px solid transparent;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        } */
+
+.Container {
+    border-end-end-radius: 7px;
+    border-end-start-radius: 7px;
+    border-start-end-radius: 7px;
+    border-start-start-radius: 7px;
+    border: 0px;
+    padding: 10px 12px 10px 12px;
+}
+
+
+/* SVG wrapper default */
+.svg-bg {
+    background-color: #f5f6f7;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    transition: all 0.3s ease;
+}
+
+/* Hide radios */
+.preview input {
+    display: none;
+}
+
+/* Big images */
+.preview .images img {
+    display: none;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#img1:checked~.images img:nth-child(1),
+#img2:checked~.images img:nth-child(2),
+#img3:checked~.images img:nth-child(3) {
+    display: block;
+}
+
+/* Arrow circle buttons */
+.arrow-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #2b4dff;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.arrow-circle:hover {
+    background: #2b4dff;
+    color: #fff;
+    /* border: 2px solid #fff; */
+    border: 0px;
+}
+
+.rounded {
+    background-color: #fff;
+    color: #0a165e;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+.rounded:hover {
+    background-color: #2b4dff;
+    color: #fff;
+}
+
+.arrow-btn {
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-btn:hover {
+    background-color: #0d6efd !important;
+    color: #f5f6f7 !important;
+}
+
+.headings {
+    color: #0a165e;
+}
+
+.headings:hover {
+    color: #2b4dff;
+}
+
+.color {
+    color: #fff;
+}
+
+.color:hover {
+    color: #2b4dff;
+}
+
+.hover-center-slide {
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hover-center-slide span {
+    display: inline-block;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Animate on hover */
+.hover-center-slide:hover span {
+    animation: centerSlide 0.6s ease-in-out forwards;
+}
+
+/* Corrected keyframes */
+@keyframes centerSlide {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    40% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* ---------- Hover-dropdown: desktop-only, minimal & safe ---------- */
+/* change breakpoint if your navbar expands at a different width */
+@media (min-width: 992px) {
+
+    /* allow menus to escape parent if parent had overflow hidden */
+    .navbar-expand-lg {
+        overflow: visible;
+        /* prevents clipping of absolute-positioned dropdowns */
+    }
+
+    /* initial hidden state (keeps bootstrap behaviour intact on small screens) */
+    .navbar-expand-lg .dropdown>.dropdown-menu {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(.25rem);
+        transition: transform .15s ease, opacity .15s ease, visibility .15s;
+        z-index: 2000;
+        /* make sure it's above other content */
+        margin-top: 0;
+        /* remove any gap causing flicker */
+    }
+
+    /* show on hover */
+    .navbar-expand-lg .dropdown:hover>.dropdown-menu,
+    .navbar-expand-lg .dropdown:focus-within>.dropdown-menu {
+        display: block;
+        /* ensure it's rendered (bootstrap sometimes uses .show) */
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    /* keep dropdown link visual feedback (caret rotation if present) */
+    .navbar-expand-lg .dropdown:hover>.nav-link::after,
+    .navbar-expand-lg .dropdown:focus-within>.nav-link::after {
+        transform: rotate(180deg);
+        transition: transform .15s ease;
+    }
+}
+
+/* On small screens keep bootstrap's click behavior intact */
+@media (max-width: 991.98px) {
+    .navbar-expand-lg .dropdown>.dropdown-menu {
+        /* let Bootstrap's JavaScript (click) control the visibility on mobile */
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* Show dropdown on hover */
+    .navbar-expand-lg .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+
+    /* Enlarge hover zone below link */
+    .navbar-expand-lg .dropdown {
+        position: relative;
+        padding-bottom: 1rem;
+        /* increases the hover area */
+    }
+
+    .navbar-expand-lg .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
+/* Dropdown style */
+/* Dropdown menu */
+.custom-dropdown {
+    width: 300px;
+    padding: 10px 0;
+}
+
+/* Dropdown item base */
+.custom-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+    color: var(--brand-color) !important;
+    font-weight: 500;
+    background-color: transparent !important;
+    /* Prevent Bootstrap background */
+    transition: padding-left 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+    /* transform: rotateX('180deg'); */
+}
+
+/* Remove Bootstrap blue hover */
+.custom-item:hover,
+.custom-item:focus,
+.custom-item:active {
+    background-color: transparent !important;
+    color: var(--brand-color) !important;
+}
+
+/* Line before text */
+.custom-item::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 0;
+    opacity: 0;
+    background-color: var(--brand-color);
+    transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+/* Hover effect */
+.custom-item:hover {
+    padding-left: 30px;
+    font-weight: 600;
+    transform: rotateX('180deg');
+}
+
+.custom-item:hover::before {
+    width: 15px;
+    opacity: 1;
+    transform: rotateX('180deg');
+}
+
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-card img {
+    transition: transform 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: #fff; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    padding: 20px;
+    /* text-align: center; */
+
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+    /* opacity: 10; */
+}
+
+.overlay-icon {
+    background-color: #0d6efd;
+    /* border-radius: 50%; */
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.overlay-icon i {
+    color: white;
+    font-size: 18px;
+}
+
+.overlay-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.overlay-subtitle {
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+.cards-bg:hover {
+    background-color: #0d6efd;
+    color: #fff !important;
+}
+
+.cards-bg:hover * {
+    color: #fff !important;
+}
+
+/* Remove Bootstrap's default background */
+.accordion-button {
+    background-color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.accordion-button:hover {
+    background-color: var(--bs-primary) !important;
+    color: var(--bs-light) !important;
+}
+
+/* Keep text white when active (expanded) */
+.accordion-button:not(.collapsed) {
+    background-color: var(--bs-primary) !important;
+    color: var(--bs-light) !important;
+    box-shadow: none;
+}
+
+/* Replace Bootstrap accordion chevron with + and - only inside #accordions */
+#accordions .accordion-button::after {
+    background-image: none !important;
+    content: '+';
+    font-weight: bold;
+    font-size: 1.75rem;
+    color: #0a165e;
+    /* dark by default */
+    transform: none !important;
+}
+
+#accordions .accordion-button:not(.collapsed)::after {
+    content: '-';
+    color: #fff;
+    /* light when active */
+}
+
+/* Default (closed) state */
+#accordions .accordion-button {
+    background-color: #f0f0f0 !important;
+    color: #0a165e !important;
+}
+
+/* Active (opened) state */
+#accordions .accordion-button:not(.collapsed) {
+    background-color: var(--bs-primary) !important;
+    color: var(--bs-light) !important;
+}
+
+/* Accordion body (content area) */
+#accordions .accordion-collapse .accordion-body {
+    background-color: #f0f0f0;
+    /* closed look */
+    color: #0a165e;
+}
+
+/* When open, match active heading */
+#accordions .accordion-collapse.show .accordion-body {
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+}
+
+
+.card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-overlay-icons {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin: 20px 40px;
+    gap: 15px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.card-img-wrapper:hover .card-img-overlay-icons {
+    opacity: 1;
+}
+
+.card-img-overlay-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    /* square background */
+
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-img-overlay-icons a:hover {
+    transform: scale(1.2);
+    background: #0d6efd;
+    /* blue background on hover */
+    color: #fff;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+    border-color: var(--bs-primary) !important;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, .25) !important;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* cards hover */
+.custom-card {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.custom-card .icon-box {
+    background-color: #f5f6f7;
+    transition: all 0.3s ease;
+}
+
+.custom-card:hover {
+    border-color: #0d6efd !important;
+    /* Bootstrap primary */
+}
+
+.custom-card:hover .icon-box {
+    background-color: #0d6efd !important;
+    color: #fff;
+}
+
+.custom-card:hover .icon-box svg {
+    fill: #fff;
+}
+
+
+/* Replace Bootstrap accordion chevron with + and - only inside #faqaccordions */
+#faqaccordions .accordion-button::after {
+    background-image: none !important;
+    content: '+';
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0a165e;
+    /* dark by default */
+    transform: none !important;
+}
+
+#faqaccordions .accordion-button:not(.collapsed)::after {
+    content: '-';
+    color: var(--bs-primary);
+    /* primary when active */
+}
+
+/* Default (closed) state */
+#faqaccordions .accordion-button {
+    background-color: #f8f9fa !important;
+    color: #0a165e !important;
+}
+
+/* Active (opened) state → only text changes */
+#faqaccordions .accordion-button:not(.collapsed) {
+    /* background-color: #f0f0f0 !important; */
+    /* keep same background */
+    color: var(--bs-primary) !important;
+    /* text-primary */
+}
+
+/* Accordion body (content area) */
+#faqaccordions .accordion-collapse .accordion-body {
+    /* background-color: #f0f0f0; */
+    color: #0a165e;
+}
+
+/* Remove default Bootstrap background */
+.faq-accordion .accordion-button {
+    background: none;
+    box-shadow: none !important;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #0a165e;
+    padding: 3rem 0;
+}
+
+.faq-accordion .accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+}
+
+.faq-accordion .accordion-body {
+    color: #6c757d;
+    padding: 0.5rem 0 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.faq-accordion .accordion-item {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+
+.animate-fade-slide {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeSlideIn 700ms cubic-bezier(.50, .9, .45, 1) forwards;
+}
+
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Respect reduce motion */
+@media (prefers-reduced-motion: reduce) {
+    .animate-fade-slide {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+/* Custom toggler icon */
+.toggler-icon {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #0a165e;
+    /* Brand color */
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
