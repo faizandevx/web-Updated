@@ -15,3 +15,7 @@ for (let i = 0; i < thumbs.length; i++) {
         bsCarousel.to(i);
     });
 }
+
+
+
+console.log("Loaded");

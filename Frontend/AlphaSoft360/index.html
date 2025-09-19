@@ -184,6 +184,7 @@
         <!-- MAIN NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white p-0 pe-3">
             <div class="container-fluid p-0">
+
                 <!-- Brand -->
                 <div class="svg-wrapper position-relative">
                     <svg viewBox="0 0 384 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
@@ -195,236 +196,304 @@
                         class="position-absolute top-50 start-50 translate-middle">
                 </div>
 
-                <!-- Toggler -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
-                    aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <!-- Navbar Links (center) -->
+            <div class="collapse navbar-collapse justify-content-center" id="mainMenu">
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-4 fw-medium fs-6">
+                    <li><a class="nav-link" style="color: #0a165e;" href="./index.html">Home</a></li>
+                    <li><a class="nav-link" style="color: #0a165e;" href="./about.html">About Us</a></li>
+
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color:#0a165e;">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu rounded-0 border-0 mt-3 custom-dropdown"
+                            aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item custom-item" href="./services.html">Service</a></li>
+                            <li><a class="dropdown-item custom-item" href="./services-details.html">Service
+                                    Details</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Pages Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color:#0a165e;">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu rounded-0 border-0 mt-3 custom-dropdown"
+                            aria-labelledby="pagesDropdown">
+                            <li><a class="dropdown-item custom-item" href="./team.html">Team</a></li>
+                            <li><a class="dropdown-item custom-item" href="./team-details.html">Team
+                                    Details</a>
+                            </li>
+                            <li><a class="dropdown-item custom-item" href="./pricing.html">Price</a></li>
+                            <li><a class="dropdown-item custom-item" href="./project.html">Project</a></li>
+                            <li><a class="dropdown-item custom-item" href="./project-details.html">Project
+                                    Details</a></li>
+                            <li><a class="dropdown-item custom-item" href="./faq’s.html">FAQ</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Blog Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color:#0a165e;">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu rounded-0 border-0 mt-3 custom-dropdown"
+                            aria-labelledby="blogDropdown">
+                            <li><a class="dropdown-item custom-item" href="#">Blog Grid</a></li>
+                            <li><a class="dropdown-item custom-item" href="#">Blog List</a></li>
+                            <li><a class="dropdown-item custom-item" href="#">Blog Details</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="nav-link" style="color: #0a165e;" href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Side Buttons + Toggler -->
+            <div class="d-flex align-items-center ms-auto">
+                <!-- Search -->
+                <a href="#"
+                    class="btn btn-light border rounded-circle d-flex align-items-center justify-content-center me-3"
+                    style="width:40px;height:40px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 
+                                    1.398h-.001q.044.06.098.115l3.85 
+                                    3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 
+                                    1 0 0 0-.115-.1zM12 6.5a5.5 5.5 
+                                    0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                </a>
+
+                <!-- CTA -->
+                <button
+                    class="fw-semibold rounded-2 hover-center-slide fs-6 bg-primary text-light border-0 px-3 py-2 me-3">
+                    <span>Get A Quote</span>
                 </button>
 
-                <!-- Links -->
-                <div class="collapse navbar-collapse" id="mainMenu">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 fw-medium fs-6">
-                        <li class=" "><a class="nav-link" style="color: #0a165e;" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" style="color: #0a165e;" href="./about.html">About
-                                Us</a>
-                        </li>
-
-                        <!-- Services Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" style="color: #0a165e;" href="#" id="servicesDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu custom-dropdown rounded-0 border-0 mt-3"
-                                aria-labelledby="servicesDropdown" style="color: #0a165e;">
-                                <li><a class="dropdown-item custom-item" href="./services.html">Service</a></li>
-                                <li><a class="dropdown-item custom-item" href="./services-details.html">Service
-                                        Details</a></li>
-                            </ul>
-                        </li>
-
-                        <!-- Pages Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" style="color: #0a165e;" href="#" id="pagesDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Pages
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu custom-dropdown rounded-0 border-0 mt-3"
-                                aria-labelledby="pagesDropdown" style="color: #0a165e;">
-                                <li><a class="dropdown-item custom-item" href="./team.html">Team</a></li>
-                                <li><a class="dropdown-item custom-item" href="./team-details.html">Team Details</a>
-                                </li>
-                                <li><a class="dropdown-item custom-item" href="./pricing.html">Price</a></li>
-                                <li><a class="dropdown-item custom-item" href="./project.html">Project</a></li>
-                                <li><a class="dropdown-item custom-item" href="./project-details.html">Project
-                                        Details</a></li>
-                                <li><a class="dropdown-item custom-item" href="./faq’s.html">FAQ</a></li>
-                            </ul>
-                        </li>
-
-                        <!-- Blog Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" style="color: #0a165e;" href="#" id="blogDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Blog
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu custom-dropdown rounded-0 border-0 mt-3"
-                                aria-labelledby="blogDropdown" style="color: #0a165e;">
-                                <li><a class="dropdown-item custom-item" href="#">Blog Grid</a></li>
-                                <li><a class="dropdown-item custom-item" href="#">Blog List</a></li>
-                                <li><a class="dropdown-item custom-item" href="#">Blog Details</a></li>
-                                <li><a class="dropdown-item custom-item" href="#">Project</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item"><a class="nav-link" style="color: #0a165e;"
-                                href="./contact.html">Contact</a></li>
-                    </ul>
-
-                    <!-- Right Side Buttons -->
-                    <div class="d-flex align-items-center">
-                        <!-- Search -->
-                        <a href="#"
-                            class="btn btn-light border rounded-circle d-flex align-items-center justify-content-center me-3"
-                            style="width:40px;height:40px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001
-                                            q.044.06.098.115l3.85 3.85a1 1 0 0 0
-                                            1.415-1.414l-3.85-3.85a1 1 0 0
-                                            0-.115-.1zM12 6.5a5.5 5.5 0 1
-                                            1-11 0 5.5 5.5 0 0 1 11 0" />
-                            </svg>
-                        </a>
-                        <!-- CTA -->
-                        <button class="Container fw-semibold fs-6 bg-primary text-light border-0 hover-center-slide">
-                            <span>Get A Quote</span>
-                        </button>
-                    </div>
-                </div>
+                <!-- Toggler Icon (Right side) -->
+                <button
+                    class="btn btn-light border rounded-circle d-flex align-items-center justify-content-center me-3"
+                    style="width:40px;height:40px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidePanel"
+                    aria-controls="sidePanel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 
+                                1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 
+                                1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 
+                                0 0 1 0 1h-11z" />
+                    </svg>
+                </button>
             </div>
         </nav>
 
-        <section>
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel"
-                data-bs-interval="3000">
-                <div class="carousel-inner">
-
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active">
-                        <div class="ratio ratio-21x9">
-                            <!-- Background Image Container with Blur Effect -->
-                            <div class="carousel-background">
-                                <img src="./crousel1.jpg" class="d-block w-100 img-fluid" alt="...">
-                            </div>
-                        </div>
-
-                        <div class="carousel-caption d-flex h-100 align-items-center pt-5 pt-md-0">
-                            <div class="row w-100">
-                                <div class="col-12 col-md-9 text-start opacity-100 animate-fade-slide">
-                                    <span class="lead fw-medium">____Best IT Company</span>
-                                    <h1 class="h1 display-4 fw-bold">
-                                        Best IT Solution Agency For Your Business
-                                    </h1>
-                                    <h6 class="lead h6 fw-normal mb-3 mb-md-4">
-                                        Leverage agile frameworks to provide a robust synopsis for high
-                                        level overviews. Iterative approaches bring table survival.
-                                    </h6>
-                                    <button
-                                        class="Button fw-semibold fs-5 bg-primary text-light border-0 hover-center-slide">
-                                        <span>Let’s Talk With Us</span>
-                                    </button>
-                                </div>
-
-                                <!-- Navigation Buttons -->
-                                <div class="col-12 col-md-3 text-md-end mt-3 mt-md-0">
-                                    <div
-                                        class="d-flex flex-md-column justify-content-center align-items-center align-items-md-end gap-3">
-                                        <button type="button" data-bs-target="#carouselExampleCaptions"
-                                            data-bs-slide-to="0" class="btn btn-primary rounded-circle p-0 active"
-                                            style="width:50px;height:50px;">1</button>
-                                        <button type="button" data-bs-target="#carouselExampleCaptions"
-                                            data-bs-slide-to="1" class="btn btn-dark rounded-circle p-0"
-                                            style="width:50px;height:50px;"></button>
-                                        <button type="button" data-bs-target="#carouselExampleCaptions"
-                                            data-bs-slide-to="2" class="btn btn-dark rounded-circle p-0"
-                                            style="width:50px;height:50px;"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="carousel-item">
-                        <div class="ratio ratio-21x9">
-                            <!-- Background Image Container with Blur Effect -->
-                            <div class="carousel-background">
-                                <img src="./crousel2.jpg" class="d-block w-100 img-fluid" alt="...">
-                            </div>
-                        </div>
-
-                        <div class="carousel-caption d-flex h-100 align-items-center pt-5 pt-md-0">
-                            <div class="row w-100">
-                                <div class="col-12 col-md-9 text-start opacity-100 animate-fade-slide">
-                                    <span class="lead fw-medium">____Best IT Company</span>
-                                    <h1 class="h1 display-4 fw-bold">
-                                        Best IT Solution Agency For Your Business
-                                    </h1>
-                                    <h6 class="lead h6 fw-normal mb-3 mb-md-4">
-                                        Leverage agile frameworks to provide a robust synopsis for high
-                                        level overviews. Iterative approaches bring table survival.
-                                    </h6>
-                                    <button
-                                        class="Button fw-semibold fs-5 bg-primary text-light border-0 hover-center-slide">
-                                        <span>Let’s Talk With Us</span>
-                                    </button>
-                                </div>
-                                <div class="col-12 col-md-3 text-md-end mt-3 mt-md-0">
-                                    <div
-                                        class="d-flex flex-md-column justify-content-center align-items-center align-items-md-end gap-3">
-                                        <button type="button" data-bs-target="#carouselExampleCaptions"
-                                            data-bs-slide-to="0" class="btn btn-dark rounded-circle p-0"
-                                            style="width:50px;height:50px;"></button>
-                                        <button type="button" data-bs-target="#carouselExampleCaptions"
-                                            data-bs-slide-to="1" class="btn btn-primary rounded-circle p-0 active"
-                                            style="width:50px;height:50px;">2</button>
-                                        <button type="button" data-bs-target="#carouselExampleCaptions"
-                                            data-bs-slide-to="2" class="btn btn-dark rounded-circle p-0"
-                                            style="width:50px;height:50px;"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="carousel-item">
-                        <div class="ratio ratio-21x9">
-                            <!-- Background Image Container with Blur Effect -->
-                            <div class="carousel-background">
-                                <img src="./crousel3.jpg" class="d-block w-100 img-fluid" alt="...">
-                            </div>
-                        </div>
-
-                        <div class="carousel-caption d-flex h-100 align-items-center pt-5 pt-md-0">
-                            <div class="row w-100">
-                                <div class="col-12 col-md-9 text-start opacity-100 animate-fade-slide">
-                                    <span class="lead fw-medium">____Best IT Company</span>
-                                    <h1 class="h1 display-4 fw-bold">
-                                        Best IT Solution Agency For Your Business
-                                    </h1>
-                                    <h6 class="lead h6 fw-normal mb-3 mb-md-4">
-                                        Leverage agile frameworks to provide a robust synopsis for high
-                                        level overviews. Iterative approaches bring table survival.
-                                    </h6>
-                                    <button
-                                        class="Button fw-semibold fs-5 bg-primary text-light border-0 hover-center-slide">
-                                        <span>Let’s Talk With Us</span>
-                                    </button>
-                                </div>
-                                <div class="col-12 col-md-3 text-md-end mt-3 mt-md-0">
-                                    <div
-                                        class="d-flex flex-md-column justify-content-center align-items-center align-items-lg-end gap-3">
-                                        <button type="button" data-bs-target="#carouselExampleCaptions"
-                                            data-bs-slide-to="0" class="btn btn-dark rounded-circle p-0"
-                                            style="width:50px;height:50px;"></button>
-                                        <button type="button" data-bs-target="#carouselExampleCaptions"
-                                            data-bs-slide-to="1" class="btn btn-dark rounded-circle p-0"
-                                            style="width:50px;height:50px;"></button>
-                                        <button type="button" data-bs-target="#carouselExampleCaptions"
-                                            data-bs-slide-to="2" class="btn btn-primary rounded-circle p-0 active"
-                                            style="width:50px;height:50px;">3</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+        <!-- Offcanvas Side Panel -->
+        <div class="offcanvas offcanvas-end text-white p-5" style="background:#0a165e; width: 30%;" tabindex="-1" id="sidePanel"
+            aria-labelledby="sidePanelLabel">
+            <div class="offcanvas-header mb-3">
+                <h5 class="offcanvas-title" id="sidePanelLabel">
+                    <img src="alpha-removebg-preview.png" alt="Logo" width="160">
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
             </div>
-        </section>
+            <div class="offcanvas-body">
+                <p class="lead fw-normal mb-3">Suspendisse interdum consectetur libero id. Fermentum leo vel orci porta non. Euismod viverra nibh cras pulvinar suspen.</p>
+
+                <hr class="border-light mt-4">
+
+                <h5 class="h5 fw-bold">Get In Touch</h5>
+                <ul class="list-unstyled mt-4">
+                    <li class="mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white"
+                            class="bi bi-envelope me-2" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 
+                                    1 2v8a2 2 0 0 1-2 
+                                    2H2a2 2 0 0 1-2-2V4zm2-1a1 
+                                    1 0 0 0-1 1v.217l7 
+                                    4.2 7-4.2V4a1 1 0 0 
+                                    0-1-1H2zm13 2.383-4.708 
+                                    2.825L15 11.105V5.383zM1 
+                                    5.383v5.722l4.708-2.897L1 5.383z" />
+                        </svg>
+                        hello@yourmail.com
+                    </li>
+                    <li class="mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white"
+                            class="bi bi-telephone me-2" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 
+                                    1 1.015-.063l2.29 2.29c.329.329.445.81.286 
+                                    1.238l-.805 2.15a.678.678 0 0 0 
+                                    .168.69l2.457 2.457a.678.678 0 0 0 
+                                    .69.168l2.15-.805a1.745 1.745 
+                                    0 0 1 1.238.286l2.29 2.29a.678.678 
+                                    0 0 1-.063 1.015l-1.29 
+                                    1.29c-.329.329-.81.445-1.238.286a11.52 
+                                    11.52 0 0 1-5.056-3.163A11.52 
+                                    11.52 0 0 1 3.368 2.566c-.159-.429-.043-.91.286-1.238l1.29-1.29z" />
+                        </svg>
+                        (00) 456 1122 7890
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white"
+                            class="bi bi-geo-alt me-2" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 
+                                    0 2 6c0 4.314 6 10 6 
+                                    10zm0-7a3 3 0 1 1 0-6 3 3 0 0 
+                                    1 0 6z" />
+                        </svg>
+                        Riverside 255, San Francisco, USA
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel"
+            data-bs-interval="3000">
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="ratio ratio-21x9">
+                        <!-- Background Image Container with Blur Effect -->
+                        <div class="carousel-background">
+                            <img src="./crousel1.jpg" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="carousel-caption d-flex h-100 align-items-center pt-5 pt-md-0">
+                        <div class="row w-100">
+                            <div class="col-12 col-md-9 text-start opacity-100 animate-fade-slide">
+                                <span class="lead fw-medium">____Best IT Company</span>
+                                <h1 class="h1 display-4 fw-bold">
+                                    Best IT Solution Agency For Your Business
+                                </h1>
+                                <h6 class="lead h6 fw-normal mb-3 mb-md-4">
+                                    Leverage agile frameworks to provide a robust synopsis for high
+                                    level overviews. Iterative approaches bring table survival.
+                                </h6>
+                                <button
+                                    class="Button fw-semibold fs-5 bg-primary text-light border-0 hover-center-slide">
+                                    <span>Let’s Talk With Us</span>
+                                </button>
+                            </div>
+
+                            <!-- Navigation Buttons -->
+                            <div class="col-12 col-md-3 text-md-end mt-3 mt-md-0">
+                                <div
+                                    class="d-flex flex-md-column justify-content-center align-items-center align-items-md-end gap-3">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                        class="btn btn-primary rounded-circle p-0 active"
+                                        style="width:50px;height:50px;">1</button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                        class="btn btn-dark rounded-circle p-0"
+                                        style="width:50px;height:50px;"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                        class="btn btn-dark rounded-circle p-0"
+                                        style="width:50px;height:50px;"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="ratio ratio-21x9">
+                        <!-- Background Image Container with Blur Effect -->
+                        <div class="carousel-background">
+                            <img src="./crousel2.jpg" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="carousel-caption d-flex h-100 align-items-center pt-5 pt-md-0">
+                        <div class="row w-100">
+                            <div class="col-12 col-md-9 text-start opacity-100 animate-fade-slide">
+                                <span class="lead fw-medium">____Best IT Company</span>
+                                <h1 class="h1 display-4 fw-bold">
+                                    Best IT Solution Agency For Your Business
+                                </h1>
+                                <h6 class="lead h6 fw-normal mb-3 mb-md-4">
+                                    Leverage agile frameworks to provide a robust synopsis for high
+                                    level overviews. Iterative approaches bring table survival.
+                                </h6>
+                                <button
+                                    class="Button fw-semibold fs-5 bg-primary text-light border-0 hover-center-slide">
+                                    <span>Let’s Talk With Us</span>
+                                </button>
+                            </div>
+                            <div class="col-12 col-md-3 text-md-end mt-3 mt-md-0">
+                                <div
+                                    class="d-flex flex-md-column justify-content-center align-items-center align-items-md-end gap-3">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                        class="btn btn-dark rounded-circle p-0"
+                                        style="width:50px;height:50px;"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                        class="btn btn-primary rounded-circle p-0 active"
+                                        style="width:50px;height:50px;">2</button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                        class="btn btn-dark rounded-circle p-0"
+                                        style="width:50px;height:50px;"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="ratio ratio-21x9">
+                        <!-- Background Image Container with Blur Effect -->
+                        <div class="carousel-background">
+                            <img src="./crousel3.jpg" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="carousel-caption d-flex h-100 align-items-center pt-5 pt-md-0">
+                        <div class="row w-100">
+                            <div class="col-12 col-md-9 text-start opacity-100 animate-fade-slide">
+                                <span class="lead fw-medium">____Best IT Company</span>
+                                <h1 class="h1 display-4 fw-bold">
+                                    Best IT Solution Agency For Your Business
+                                </h1>
+                                <h6 class="lead h6 fw-normal mb-3 mb-md-4">
+                                    Leverage agile frameworks to provide a robust synopsis for high
+                                    level overviews. Iterative approaches bring table survival.
+                                </h6>
+                                <button
+                                    class="Button fw-semibold fs-5 bg-primary text-light border-0 hover-center-slide">
+                                    <span>Let’s Talk With Us</span>
+                                </button>
+                            </div>
+                            <div class="col-12 col-md-3 text-md-end mt-3 mt-md-0">
+                                <div
+                                    class="d-flex flex-md-column justify-content-center align-items-center align-items-lg-end gap-3">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                        class="btn btn-dark rounded-circle p-0"
+                                        style="width:50px;height:50px;"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                        class="btn btn-dark rounded-circle p-0"
+                                        style="width:50px;height:50px;"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                        class="btn btn-primary rounded-circle p-0 active"
+                                        style="width:50px;height:50px;">3</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     </header>
 
@@ -1030,7 +1099,7 @@
                             <img src="./image copy 13.png" class="img-fluid mb-5" alt="">
                         </div>
                         <div>
-                            <span class="rounded-pill p-2 bg-primary border-0 text-light lead fw-normal">STEP -
+                            <span class="rounded-pill px-3 py-2 bg-primary border-0 text-light lead fw-normal">STEP -
                                 01</span>
                         </div>
                         <div class="mt-5">
@@ -1046,7 +1115,7 @@
                             <img src="./image copy 14.png" class="img-fluid mb-5" alt="">
                         </div>
                         <div>
-                            <span class="rounded-pill p-2 bg-primary border-0 text-light  lead fw-normal">STEP -
+                            <span class="rounded-pill px-3 py-2 bg-primary border-0 text-light  lead fw-normal">STEP -
                                 02</span>
                         </div>
                         <div class="mt-5">
@@ -1062,7 +1131,7 @@
                             <img src="./image copy 15.png" class="img-fluid mb-5" alt="">
                         </div>
                         <div>
-                            <span class="rounded-pill p-2 bg-primary border-0 text-light lead fw-normal">STEP -
+                            <span class="rounded-pill px-3 py-2 bg-primary border-0 text-light lead fw-normal">STEP -
                                 03</span>
                         </div>
                         <div class="mt-5">
@@ -1829,7 +1898,7 @@
                     </div>
 
                     <!-- Services -->
-                    <div class="col-12 col-md-6 col-lg-3 pt-4">
+                    <div class="col-12 col-md-6 col-lg-2 pt-4">
                         <h5 class="fw-bolder mb-4 text-light">Services</h5>
                         <ul class="list-unstyled">
                             <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
@@ -1856,7 +1925,7 @@
                     </div>
 
                     <!-- Information -->
-                    <div class="col-12 col-md-6 col-lg-3 pt-4">
+                    <div class="col-12 col-md-6 col-lg-2 pt-4">
                         <h5 class="fw-bolder mb-4 text-light">Information</h5>
                         <ul class="list-unstyled">
                             <li class="mb-4"><a href="#" class="text-decoration-none color fw-normal"
