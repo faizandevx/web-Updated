@@ -30,7 +30,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
     /* Dark overlay, adjust opacity as needed */
     z-index: 0;
 }
@@ -58,38 +58,6 @@
     --brand-color: #0a165e;
 }
 
-/* Enable dropdowns on hover for desktop */
-@media (min-width: 992px) {
-    .navbar .dropdown:hover .dropdown-menu {
-        display: block;
-        margin-top: 0;
-    }
-}
-
-/* Smooth fade animation */
-.dropdown-menu {
-    display: none;
-    opacity: 0;
-    transition: opacity .3s ease;
-}
-
-.navbar .dropdown:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-}
-
-/* Dropdown style */
-.dropdown-menu {
-    border-radius: .5rem;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .1);
-}
-
-.dropdown-item:hover {
-    background-color: #0d6efd;
-    color: #fff !important;
-    border-radius: .375rem;
-}
-
 /* Logo wrapper */
 .svg-wrapper {
     width: 100%;
@@ -106,13 +74,6 @@
 .svg-wrapper img {
     max-height: 60%;
     width: auto;
-}
-
-.custom-input {
-    border-radius: 8px;
-    /* rounded corners */
-    padding-right: 120px;
-    /* space for button */
 }
 
 .button {
@@ -191,6 +152,7 @@
     display: block;
 }
 
+/* Our Team is Ready To Help. */
 /* Arrow circle buttons */
 .arrow-circle {
     display: inline-flex;
@@ -214,7 +176,7 @@
     border: 0px;
 }
 
-.rounded {
+.Rounded {
     background-color: #fff;
     color: #0a165e;
     height: 40px;
@@ -222,16 +184,16 @@
     border-radius: 10px;
 }
 
-.rounded:hover {
+.Rounded:hover {
     background-color: #2b4dff;
     color: #fff;
 }
 
 .arrow-btn {
-    transition: all 0.3s ease-in-out;
+    background-color: #fff !important;
+    color: #0a165e !important;
+    /* transition: all 0.3s ease-in-out; */
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .arrow-btn:hover {

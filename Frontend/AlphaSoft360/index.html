@@ -12,93 +12,101 @@
 
 <body class="m-auto">
     <header>
-        <!-- <div class="container-fluid"> -->
+        <div class="container-fluid px-0">
 
-        <!-- TOP NAVBAR (Contact + Social) -->
-        <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom py-2">
-            <div class="container-fluid">
-                <div class="d-flex d-md-none justify-content-center mb-2">
-                    <a href="mailto:faizandevx@gmail.com" class="text-decoration-none fw-semibold"
-                        style="color: #0a165e;">
-                        faizandevx@gmail.com
-                    </a>
-                </div>
-                <!-- Toggler for top navbar -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topbarMenu"
-                    aria-controls="topbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Left: Contact Info -->
-                <div class="collapse navbar-collapse" id="topbarMenu">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <!-- Phone -->
-                        <li class="nav-item d-flex align-items-center pe-5 border-end border-2 border-dark"
+            <!-- TOP NAVBAR (Contact + Social) -->
+            <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom py-2">
+                <div class="container-fluid">
+                    <div class="d-flex d-md-none justify-content-center mb-2">
+                        <a href="mailto:faizandevx@gmail.com" class="text-decoration-none fw-semibold"
                             style="color: #0a165e;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                                class="bi bi-telephone-fill me-1" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-                            </svg>
-                            <a href="#" class="text-decoration-none bg-text-color"
-                                style="color: #0a165e;">+923473057550</a>
-                        </li>
+                            faizandevx@gmail.com
+                        </a>
+                    </div>
+                    <!-- Toggler Icon (Right side) -->
+                    <button
+                        class="btn btn-light border rounded-circle d-flex align-items-center justify-content-center me-3"
+                        style="width:50px;height:50px;" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#sidePanel" aria-controls="sidePanel">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 
+                                1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 
+                                1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 
+                                0 0 1 0 1h-11z" />
+                        </svg>
+                    </button>
 
-                        <!-- Email -->
-                        <li class="nav-item d-flex align-items-center px-5 border-end border-2 border-dark"
-                            style="color: #0a165e;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                                class="bi bi-envelope-fill me-1" viewBox="0 0 16 16">
-                                <path
-                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
-                            </svg>
-                            <a href="mailto:faizandevx@gmail.com" class="text-decoration-none bg-text-color"
+                    <!-- Left: Contact Info -->
+                    <div class="collapse navbar-collapse" id="topbarMenu">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <!-- Phone -->
+                            <li class="nav-item d-flex align-items-center pe-5 border-end border-2 border-dark"
                                 style="color: #0a165e;">
-                                faizandevx@gmail.com
-                            </a>
-                        </li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                    class="bi bi-telephone-fill me-1" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg>
+                                <a href="#" class="text-decoration-none bg-text-color"
+                                    style="color: #0a165e;">+923473057550</a>
+                            </li>
 
-                        <!-- Address -->
-                        <li class="nav-item d-flex align-items-center px-5" style="color: #0a165e;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                                class="bi bi-geo-alt-fill me-1" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
-                            </svg>
-                            <span class="">
-                                <a href="#" class="text-decoration-none bg-text-color" style="color: #0a165e;">Pak
-                                    Avenue</a></span>
-                        </li>
-                    </ul>
-                </div>
+                            <!-- Email -->
+                            <li class="nav-item d-flex align-items-center px-5 border-end border-2 border-dark"
+                                style="color: #0a165e;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                    class="bi bi-envelope-fill me-1" viewBox="0 0 16 16">
+                                    <path
+                                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                                </svg>
+                                <a href="mailto:faizandevx@gmail.com" class="text-decoration-none bg-text-color"
+                                    style="color: #0a165e;">
+                                    faizandevx@gmail.com
+                                </a>
+                            </li>
 
-                <!-- Right: Social Icons -->
-                <ul class="navbar-nav flex-row gap-2">
-                    <!-- Facebook -->
-                    <li class="nav-item">
-                        <a href="#"
-                            class="text-color nav-link p-0 border rounded-circle d-flex align-items-center justify-content-center"
-                            style="width:36px;height:36px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 
+                            <!-- Address -->
+                            <li class="nav-item d-flex align-items-center px-5" style="color: #0a165e;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                    class="bi bi-geo-alt-fill me-1" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                                </svg>
+                                <span class="">
+                                    <a href="#" class="text-decoration-none bg-text-color" style="color: #0a165e;">Pak
+                                        Avenue</a></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Right: Social Icons -->
+                    <ul class="navbar-nav flex-row gap-2">
+                        <!-- Facebook -->
+                        <li class="nav-item">
+                            <a href="https://web.facebook.com/?_rdc=1&_rdr#"
+                                class="text-color nav-link p-0 border rounded-circle d-flex align-items-center justify-content-center"
+                                style="width:36px;height:36px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 
                                                     3.603-.002 8.05c0 4.017 2.926 7.347 
                                                     6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
                                                     1.195-3.131 3.022-3.131.876 0 1.791.157 
                                                     1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 
                                                     1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 
                                                     6.75-3.934 6.75-7.951" />
-                            </svg>
-                        </a>
-                    </li>
-                    <!-- Twitter -->
-                    <li class="nav-item">
-                        <a href="#"
-                            class="text-color nav-link p-0 border rounded-circle d-flex align-items-center justify-content-center"
-                            style="width:36px;height:36px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-twitter" viewBox="0 0 16 16">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- Twitter -->
+                        <li class="nav-item">
+                            <a href="https://x.com/?lang=en"
+                                class="text-color nav-link p-0 border rounded-circle d-flex align-items-center justify-content-center"
+                                style="width:36px;height:36px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-twitter" viewBox="0 0 16 16">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 
                                                     9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 
                                                     0 0 16 3.542a6.7 6.7 0 0 
                                                     1-1.889.518 3.3 3.3 0 0 
@@ -114,17 +122,17 @@
                                                     0 3.067 2.277A6.6 6.6 0 0 
                                                     1 .78 13.58a6 6 0 0 
                                                     1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
-                            </svg>
-                        </a>
-                    </li>
-                    <!-- LinkedIn -->
-                    <li class="nav-item">
-                        <a href="#"
-                            class="text-color nav-link p-0 border rounded-circle d-flex align-items-center justify-content-center"
-                            style="width:36px;height:36px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-linkedin" viewBox="0 0 16 16">
-                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- LinkedIn -->
+                        <li class="nav-item">
+                            <a href="https://pk.linkedin.com/"
+                                class="text-color nav-link p-0 border rounded-circle d-flex align-items-center justify-content-center"
+                                style="width:36px;height:36px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 
                                                     0 16 .513 16 1.146v13.708c0 .633-.526 
                                                     1.146-1.175 1.146H1.175C.526 16 0 
                                                     15.487 0 14.854zm4.943 
@@ -136,17 +144,17 @@
                                                     1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 
                                                     0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 
                                                     0 7.225 0 7.225z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <!-- Instagram -->
-                    <li class="nav-item">
-                        <a href="#"
-                            class="text-color nav-link p-0 border rounded-circle d-flex align-items-center justify-content-center"
-                            style="width:36px;height:36px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path d="M8 0C5.829 0 5.556.01 4.703.048 
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- Instagram -->
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/"
+                                class="text-color nav-link p-0 border rounded-circle d-flex align-items-center justify-content-center"
+                                style="width:36px;height:36px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 
                                                     3.85.088 3.269.222 2.76.42a3.9 3.9 
                                                     0 0 0-1.417.923A3.9 3.9 0 0 
                                                     0 .42 2.76C.222 3.268.087 3.85.048 
@@ -174,344 +182,347 @@
                                                     4.109 0 1 0 0 8.217 4.109 4.109 
                                                     0 0 0 0-8.217m0 1.441a2.667 2.667 
                                                     0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <!-- MAIN NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white p-0 pe-3">
-            <div class="container-fluid p-0">
-
-                <!-- Brand -->
-                <div class="svg-wrapper position-relative">
-                    <svg viewBox="0 0 384 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-                        <path
-                            d="M324.5 51.2295C313.7 90.2459 287.333 100 275.5 100H0V0H384C368.667 0.819672 335.3 12.2131 324.5 51.2295Z"
-                            fill="#2B4DFF" />
-                    </svg>
-                    <img src="alpha-removebg-preview.png" alt="Logo"
-                        class="position-absolute top-50 start-50 translate-middle">
-                </div>
-
-                <!-- Navbar Links (center) -->
-                <div class="collapse navbar-collapse justify-content-center" id="mainMenu">
-                    <ul class="navbar-nav mb-2 mb-lg-0 gap-4 fw-medium fs-6">
-                        <li><a class="nav-link" style="color: #0a165e;" href="./index.html">Home</a></li>
-                        <li><a class="nav-link" style="color: #0a165e;" href="./about.html">About Us</a></li>
-
-                        <!-- Services Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" style="color:#0a165e;">
-                                Services
+                                </svg>
                             </a>
-                            <ul class="dropdown-menu rounded-0 border-0 mt-3 custom-dropdown"
-                                aria-labelledby="servicesDropdown">
-                                <li><a class="dropdown-item custom-item" href="./services.html">Service</a></li>
-                                <li><a class="dropdown-item custom-item" href="./services-details.html">Service
-                                        Details</a></li>
-                            </ul>
                         </li>
-
-                        <!-- Pages Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" style="color:#0a165e;">
-                                Pages
-                            </a>
-                            <ul class="dropdown-menu rounded-0 border-0 mt-3 custom-dropdown"
-                                aria-labelledby="pagesDropdown">
-                                <li><a class="dropdown-item custom-item" href="./team.html">Team</a></li>
-                                <li><a class="dropdown-item custom-item" href="./team-details.html">Team
-                                        Details</a>
-                                </li>
-                                <li><a class="dropdown-item custom-item" href="./pricing.html">Price</a></li>
-                                <li><a class="dropdown-item custom-item" href="./project.html">Project</a></li>
-                                <li><a class="dropdown-item custom-item" href="./project-details.html">Project
-                                        Details</a></li>
-                                <li><a class="dropdown-item custom-item" href="./faq’s.html">FAQ</a></li>
-                            </ul>
-                        </li>
-
-                        <!-- Blog Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" style="color:#0a165e;">
-                                Blog
-                            </a>
-                            <ul class="dropdown-menu rounded-0 border-0 mt-3 custom-dropdown"
-                                aria-labelledby="blogDropdown">
-                                <li><a class="dropdown-item custom-item" href="#">Blog Grid</a></li>
-                                <li><a class="dropdown-item custom-item" href="#">Blog List</a></li>
-                                <li><a class="dropdown-item custom-item" href="#">Blog Details</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a class="nav-link" style="color: #0a165e;" href="./contact.html">Contact</a></li>
                     </ul>
                 </div>
+            </nav>
 
-                <!-- Right Side Buttons + Toggler -->
-                <div class="d-flex align-items-center ms-auto">
-                    <!-- Search -->
-                    <a href="#"
-                        class="btn btn-light border rounded-circle d-flex align-items-center justify-content-center me-3"
-                        style="width:50px;height:50px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 
+            <!-- MAIN NAVBAR -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white p-0 pe-3">
+                <div class="container-fluid p-0">
+
+                    <!-- Brand -->
+                    <div class="svg-wrapper position-relative">
+                        <svg viewBox="0 0 384 100" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M324.5 51.2295C313.7 90.2459 287.333 100 275.5 100H0V0H384C368.667 0.819672 335.3 12.2131 324.5 51.2295Z"
+                                fill="#2B4DFF" />
+                        </svg>
+                        <img src="./Gemini_Generated_Image_x7luuvx7luuvx7lu-removebg-preview.png" alt="Logo"
+                        class="position-absolute top-50 start-50 end-50 translate-middle">
+                    </div>
+
+                    <!-- Navbar Links (center) -->
+                    <div class="collapse navbar-collapse justify-content-center" id="mainMenu">
+                        <ul class="navbar-nav mb-2 mb-lg-0 gap-4 fw-medium fs-6">
+                            <li><a class="nav-link" style="color: #0a165e;" href="./index.html">Home</a></li>
+                            <li><a class="nav-link" style="color: #0a165e;" href="./about.html">About Us</a></li>
+
+                            <!-- Services Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false" style="color:#0a165e;">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu rounded-0 border-0 mt-3 custom-dropdown"
+                                    aria-labelledby="servicesDropdown">
+                                    <li><a class="dropdown-item custom-item" href="./services.html">Service</a></li>
+                                    <li><a class="dropdown-item custom-item" href="./services-details.html">Service
+                                            Details</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Pages Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false" style="color:#0a165e;">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu rounded-0 border-0 mt-3 custom-dropdown"
+                                    aria-labelledby="pagesDropdown">
+                                    <li><a class="dropdown-item custom-item" href="./team.html">Team</a></li>
+                                    <li><a class="dropdown-item custom-item" href="./team-details.html">Team
+                                            Details</a>
+                                    </li>
+                                    <li><a class="dropdown-item custom-item" href="./pricing.html">Price</a></li>
+                                    <li><a class="dropdown-item custom-item" href="./project.html">Project</a></li>
+                                    <li><a class="dropdown-item custom-item" href="./project-details.html">Project
+                                            Details</a></li>
+                                    <li><a class="dropdown-item custom-item" href="./faq’s.html">FAQ</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Blog Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false" style="color:#0a165e;">
+                                    Blog
+                                </a>
+                                <ul class="dropdown-menu rounded-0 border-0 mt-3 custom-dropdown"
+                                    aria-labelledby="blogDropdown">
+                                    <li><a class="dropdown-item custom-item" href="#">Blog Grid</a></li>
+                                    <li><a class="dropdown-item custom-item" href="#">Blog List</a></li>
+                                    <li><a class="dropdown-item custom-item" href="#">Blog Details</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a class="nav-link" style="color: #0a165e;" href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Right Side Buttons + Toggler -->
+                    <div class="d-flex align-items-center ms-auto">
+                        <!-- Search -->
+                        <a href="#"
+                            class="btn btn-light border rounded-circle d-flex align-items-center justify-content-center me-3"
+                            style="width:50px;height:50px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 
                                     1.398h-.001q.044.06.098.115l3.85 
                                     3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 
                                     1 0 0 0-.115-.1zM12 6.5a5.5 5.5 
                                     0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                        </svg>
-                    </a>
+                            </svg>
+                        </a>
 
-                    <!-- CTA -->
-                    <button
-                        class="fw-semibold rounded-2 hover-center-slide fs-6 bg-primary text-light border-0 px-3 py-2 me-3">
-                        <span>Get A Quote</span>
-                    </button>
+                        <!-- CTA -->
+                        <button
+                            class="fw-semibold rounded-2 hover-center-slide fs-6 bg-primary text-light border-0 px-3 py-2 me-3">
+                            <span>Get A Quote</span>
+                        </button>
 
-                    <!-- Toggler Icon (Right side) -->
-                    <button
-                        class="btn btn-light border rounded-circle d-flex align-items-center justify-content-center me-3"
-                        style="width:50px;height:50px;" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#sidePanel" aria-controls="sidePanel">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                            class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 
+                        <!-- Toggler Icon (Right side) -->
+                        <button
+                            class="btn btn-light border rounded-circle d-flex align-items-center justify-content-center me-3"
+                            style="width:50px;height:50px;" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#sidePanel" aria-controls="sidePanel">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 
                                 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 
                                 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 
                                 0 0 1 0 1h-11z" />
-                        </svg>
-                    </button>
-                </div>
-        </nav>
-
-        <!-- Offcanvas Side Panel -->
-        <div class="offcanvas offcanvas-end text-white p-5" style="background:#0a165e; width: 30%;" tabindex="-1"
-            id="sidePanel" aria-labelledby="sidePanelLabel">
-            <div class="offcanvas-header mb-3">
-                <h5 class="offcanvas-title" id="sidePanelLabel">
-                    <img src="alpha-removebg-preview.png" alt="Logo" width="160">
-                </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <p class="lead fw-normal mb-3">Suspendisse interdum consectetur libero id. Fermentum leo vel orci porta
-                    non. Euismod viverra nibh cras pulvinar suspen.</p>
-
-                <hr class="border-light my-4">
-
-                <h5 class="h5 fw-bold">Get In Touch</h5>
-                <ul class="list-unstyled mt-4">
-                    <li class="mb-4 d-flex gap-3">
-                        <a href="#"
-                            class="bg-primary text-light nav-link p-0 border-0 shadow-sm rounded-circle d-flex align-items-center justify-content-center"
-                            style="width:55px;height:55px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                                class="bi bi-envelope" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
                             </svg>
-                        </a>
-
-                        <div class="d-flex flex-column">
-                            <span class="opacity-100 fw-normal" style="font-size: large; color: #A7ABC5;">Email</span>
-                            <span class=" fw-medium fs-5"><a href="#"
-                                    class="color text-decoration-none">faizandevx@gmail.com</a></span>
-                        </div>
-                    </li>
-
-                    <li class="mb-4 d-flex gap-3">
-                        <a href="#"
-                            class="bg-primary text-light nav-link p-0 border-0 shadow-sm rounded-circle d-flex align-items-center justify-content-center"
-                            style="width:55px;height:55px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                                class="bi bi-telephone" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-                            </svg>
-                        </a>
-
-                        <div class="d-flex flex-column">
-                            <span class="opacity-100 fw-normal" style="font-size: large; color: #A7ABC5;">Phone</span>
-                            <span class="fw-medium fs-5"><a href="#"
-                                    class="color text-decoration-none">+923473057550</a></span>
-                        </div>
-                    </li>
-
-                    <li class="mb-4 d-flex gap-3">
-                        <a href="#"
-                            class="bg-primary text-light nav-link p-0 border-0 shadow-sm rounded-circle d-flex align-items-center justify-content-center"
-                            style="width:55px;height:55px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
-                            </svg>
-                        </a>
-                        <div class="d-flex flex-column">
-                            <span class="opacity-100 fw-normal"
-                                style="font-size: large; color: #A7ABC5;">Location</span>
-                            <span class="fw-medium fs-5"><a href="#" class="color text-decoration-none">Pak
-                                    Avenue</a></span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-
-    <section>
-        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel"
-            data-bs-interval="3000">
-            <div class="carousel-inner">
-
-                <!-- Slide 1 -->
-                <div class="carousel-item active">
-                    <div class="ratio ratio-21x9">
-                        <!-- Background Image Container with Blur Effect -->
-                        <div class="carousel-background">
-                            <img src="./crousel1.jpg" class="d-block w-100 img-fluid" alt="...">
-                        </div>
-                    </div>
-
-                    <div class="carousel-caption d-flex h-100 align-items-center pt-5 pt-md-0">
-                        <div class="row w-100">
-                            <div class="col-12 col-md-9 text-start opacity-100 animate-fade-slide">
-                                <span class="lead fw-medium">____Best IT Company</span>
-                                <h1 class="h1 display-4 fw-bold">
-                                    Best IT Solution Agency For Your Business
-                                </h1>
-                                <h6 class="lead h6 fw-normal mb-3 mb-md-4">
-                                    Leverage agile frameworks to provide a robust synopsis for high
-                                    level overviews. Iterative approaches bring table survival.
-                                </h6>
-                                <button
-                                    class="Button fw-semibold fs-5 bg-primary text-light border-0 hover-center-slide">
-                                    <span>Let’s Talk With Us</span>
-                                </button>
-                            </div>
-
-                            <!-- Navigation Buttons -->
-                            <div class="col-12 col-md-3 text-md-end mt-3 mt-md-0">
-                                <div
-                                    class="d-flex flex-md-column justify-content-center align-items-center align-items-md-end gap-3">
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                        class="btn btn-primary rounded-circle p-0 active"
-                                        style="width:50px;height:50px;">1</button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                        class="btn btn-dark rounded-circle p-0"
-                                        style="width:50px;height:50px;"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                        class="btn btn-dark rounded-circle p-0"
-                                        style="width:50px;height:50px;"></button>
-                                </div>
-                            </div>
-                        </div>
+                        </button>
                     </div>
                 </div>
+            </nav>
 
-                <!-- Slide 2 -->
-                <div class="carousel-item">
-                    <div class="ratio ratio-21x9">
-                        <!-- Background Image Container with Blur Effect -->
-                        <div class="carousel-background">
-                            <img src="./crousel2.jpg" class="d-block w-100 img-fluid" alt="...">
-                        </div>
-                    </div>
-
-                    <div class="carousel-caption d-flex h-100 align-items-center pt-5 pt-md-0">
-                        <div class="row w-100">
-                            <div class="col-12 col-md-9 text-start opacity-100 animate-fade-slide">
-                                <span class="lead fw-medium">____Best IT Company</span>
-                                <h1 class="h1 display-4 fw-bold">
-                                    Best IT Solution Agency For Your Business
-                                </h1>
-                                <h6 class="lead h6 fw-normal mb-3 mb-md-4">
-                                    Leverage agile frameworks to provide a robust synopsis for high
-                                    level overviews. Iterative approaches bring table survival.
-                                </h6>
-                                <button
-                                    class="Button fw-semibold fs-5 bg-primary text-light border-0 hover-center-slide">
-                                    <span>Let’s Talk With Us</span>
-                                </button>
-                            </div>
-                            <div class="col-12 col-md-3 text-md-end mt-3 mt-md-0">
-                                <div
-                                    class="d-flex flex-md-column justify-content-center align-items-center align-items-md-end gap-3">
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                        class="btn btn-dark rounded-circle p-0"
-                                        style="width:50px;height:50px;"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                        class="btn btn-primary rounded-circle p-0 active"
-                                        style="width:50px;height:50px;">2</button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                        class="btn btn-dark rounded-circle p-0"
-                                        style="width:50px;height:50px;"></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Offcanvas Side Panel -->
+            <div class="offcanvas offcanvas-end text-white p-5" style="background:#0a165e; width: 30%;" tabindex="-1"
+                id="sidePanel" aria-labelledby="sidePanelLabel">
+                <div class="offcanvas-header mb-3">
+                    <h5 class="offcanvas-title" id="sidePanelLabel">
+                        <img src="alpha-removebg-preview.png" alt="Logo" width="160">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
+                <div class="offcanvas-body">
+                    <p class="lead fw-normal mb-3">Suspendisse interdum consectetur libero id. Fermentum leo vel orci
+                        porta
+                        non. Euismod viverra nibh cras pulvinar suspen.</p>
 
-                <!-- Slide 3 -->
-                <div class="carousel-item">
-                    <div class="ratio ratio-21x9">
-                        <!-- Background Image Container with Blur Effect -->
-                        <div class="carousel-background">
-                            <img src="./crousel3.jpg" class="d-block w-100 img-fluid" alt="...">
-                        </div>
-                    </div>
+                    <hr class="border-light my-4">
 
-                    <div class="carousel-caption d-flex h-100 align-items-center pt-5 pt-md-0">
-                        <div class="row w-100">
-                            <div class="col-12 col-md-9 text-start opacity-100 animate-fade-slide">
-                                <span class="lead fw-medium">____Best IT Company</span>
-                                <h1 class="h1 display-4 fw-bold">
-                                    Best IT Solution Agency For Your Business
-                                </h1>
-                                <h6 class="lead h6 fw-normal mb-3 mb-md-4">
-                                    Leverage agile frameworks to provide a robust synopsis for high
-                                    level overviews. Iterative approaches bring table survival.
-                                </h6>
-                                <button
-                                    class="Button fw-semibold fs-5 bg-primary text-light border-0 hover-center-slide">
-                                    <span>Let’s Talk With Us</span>
-                                </button>
+                    <h5 class="h5 fw-bold">Get In Touch</h5>
+                    <ul class="list-unstyled mt-4">
+                        <li class="mb-4 d-flex gap-3">
+                            <a href="#"
+                                class="bg-primary text-light nav-link p-0 border-0 shadow-sm rounded-circle d-flex align-items-center justify-content-center"
+                                style="width:55px;height:55px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                    class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                                </svg>
+                            </a>
+
+                            <div class="d-flex flex-column">
+                                <span class="opacity-100 fw-normal"
+                                    style="font-size: large; color: #A7ABC5;">Email</span>
+                                <span class=" fw-medium fs-5"><a href="#"
+                                        class="color text-decoration-none">faizandevx@gmail.com</a></span>
                             </div>
-                            <div class="col-12 col-md-3 text-md-end mt-3 mt-md-0">
-                                <div
-                                    class="d-flex flex-md-column justify-content-center align-items-center align-items-lg-end gap-3">
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                        class="btn btn-dark rounded-circle p-0"
-                                        style="width:50px;height:50px;"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                        class="btn btn-dark rounded-circle p-0"
-                                        style="width:50px;height:50px;"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                        class="btn btn-primary rounded-circle p-0 active"
-                                        style="width:50px;height:50px;">3</button>
-                                </div>
+                        </li>
+
+                        <li class="mb-4 d-flex gap-3">
+                            <a href="#"
+                                class="bg-primary text-light nav-link p-0 border-0 shadow-sm rounded-circle d-flex align-items-center justify-content-center"
+                                style="width:55px;height:55px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                    class="bi bi-telephone" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg>
+                            </a>
+
+                            <div class="d-flex flex-column">
+                                <span class="opacity-100 fw-normal"
+                                    style="font-size: large; color: #A7ABC5;">Phone</span>
+                                <span class="fw-medium fs-5"><a href="#"
+                                        class="color text-decoration-none">+923473057550</a></span>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+
+                        <li class="mb-4 d-flex gap-3">
+                            <a href="#"
+                                class="bg-primary text-light nav-link p-0 border-0 shadow-sm rounded-circle d-flex align-items-center justify-content-center"
+                                style="width:55px;height:55px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                    class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                                </svg>
+                            </a>
+                            <div class="d-flex flex-column">
+                                <span class="opacity-100 fw-normal"
+                                    style="font-size: large; color: #A7ABC5;">Location</span>
+                                <span class="fw-medium fs-5"><a href="#" class="color text-decoration-none">Pak
+                                        Avenue</a></span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-
             </div>
         </div>
-    </section>
-
     </header>
 
     <main class="">
+
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                data-bs-interval="3000">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="ratio ratio-21x9">
+                            <!-- Background Image Container with Blur Effect -->
+                            <div class="carousel-background">
+                                <img src="./crousel1.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-caption d-flex h-100 align-items-center pt-5 pt-md-0">
+                            <div class="row w-100">
+                                <div class="col-12 col-md-9 text-start opacity-100 animate-fade-slide">
+                                    <span class="lead fw-medium">____Best IT Company</span>
+                                    <h1 class="h1 display-4 fw-bold">
+                                        Best IT Solution Agency For Your Business
+                                    </h1>
+                                    <h6 class="lead h6 fw-normal mb-3 mb-md-4">
+                                        Leverage agile frameworks to provide a robust synopsis for high
+                                        level overviews. Iterative approaches bring table survival.
+                                    </h6>
+                                    <button
+                                        class="Button fw-semibold fs-5 bg-primary text-light border-0 hover-center-slide">
+                                        <span>Let’s Talk With Us</span>
+                                    </button>
+                                </div>
+
+                                <!-- Navigation Buttons -->
+                                <div class="col-12 col-md-3 text-md-end mt-3 mt-md-0">
+                                    <div
+                                        class="d-flex flex-md-column justify-content-center align-items-center align-items-md-end gap-3">
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="0" class="btn btn-primary rounded-circle p-0 active"
+                                            style="width:50px;height:50px;">1</button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="1" class="btn btn-dark rounded-circle p-0"
+                                            style="width:50px;height:50px;"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="2" class="btn btn-dark rounded-circle p-0"
+                                            style="width:50px;height:50px;"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="ratio ratio-21x9">
+                            <!-- Background Image Container with Blur Effect -->
+                            <div class="carousel-background">
+                                <img src="./crousel2.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-caption d-flex h-100 align-items-center pt-5 pt-md-0">
+                            <div class="row w-100">
+                                <div class="col-12 col-md-9 text-start opacity-100 animate-fade-slide">
+                                    <span class="lead fw-medium">____Best IT Company</span>
+                                    <h1 class="h1 display-4 fw-bold">
+                                        Best IT Solution Agency For Your Business
+                                    </h1>
+                                    <h6 class="lead h6 fw-normal mb-3 mb-md-4">
+                                        Leverage agile frameworks to provide a robust synopsis for high
+                                        level overviews. Iterative approaches bring table survival.
+                                    </h6>
+                                    <button
+                                        class="Button fw-semibold fs-5 bg-primary text-light border-0 hover-center-slide">
+                                        <span>Let’s Talk With Us</span>
+                                    </button>
+                                </div>
+                                <div class="col-12 col-md-3 text-md-end mt-3 mt-md-0">
+                                    <div
+                                        class="d-flex flex-md-column justify-content-center align-items-center align-items-md-end gap-3">
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="0" class="btn btn-dark rounded-circle p-0"
+                                            style="width:50px;height:50px;"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="1" class="btn btn-primary rounded-circle p-0 active"
+                                            style="width:50px;height:50px;">2</button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="2" class="btn btn-dark rounded-circle p-0"
+                                            style="width:50px;height:50px;"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="ratio ratio-21x9">
+                            <!-- Background Image Container with Blur Effect -->
+                            <div class="carousel-background">
+                                <img src="./crousel3.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-caption d-flex h-100 align-items-center pt-5 pt-md-0">
+                            <div class="row w-100">
+                                <div class="col-12 col-md-9 text-start opacity-100 animate-fade-slide">
+                                    <span class="lead fw-medium">____Best IT Company</span>
+                                    <h1 class="h1 display-4 fw-bold">
+                                        Best IT Solution Agency For Your Business
+                                    </h1>
+                                    <h6 class="lead h6 fw-normal mb-3 mb-md-4">
+                                        Leverage agile frameworks to provide a robust synopsis for high
+                                        level overviews. Iterative approaches bring table survival.
+                                    </h6>
+                                    <button
+                                        class="Button fw-semibold fs-5 bg-primary text-light border-0 hover-center-slide">
+                                        <span>Let’s Talk With Us</span>
+                                    </button>
+                                </div>
+                                <div class="col-12 col-md-3 text-md-end mt-3 mt-md-0">
+                                    <div
+                                        class="d-flex flex-md-column justify-content-center align-items-center align-items-lg-end gap-3">
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="0" class="btn btn-dark rounded-circle p-0"
+                                            style="width:50px;height:50px;"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="1" class="btn btn-dark rounded-circle p-0"
+                                            style="width:50px;height:50px;"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="2" class="btn btn-primary rounded-circle p-0 active"
+                                            style="width:50px;height:50px;">3</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Company About Section -->
         <section>
             <div class="p-5">
@@ -556,9 +567,8 @@
                             <div class="mx-4">
                                 <h4 class="mb-1 fw-bold" style="color: #0a165e;">Our Vission</h4>
                                 <p class="text-opacity-100 mb-0" style="color: #585b6f;">
-                                    Our mission is to push boundaries, engage audiences, and driv engage innovation
-                                    through
-                                </p>
+                                    Our vision is a guiding statement that defines our future goals, aspirations, and
+                                    direction</p>
                             </div>
                         </div>
 
@@ -571,8 +581,8 @@
                             <div class="mx-4">
                                 <h4 class="mb-1 fw-bold" style="color: #0a165e;">Our Awards</h4>
                                 <p class="text-opacity-100 mb-0" style="color: #585b6f;">
-                                    Our mission is to push boundaries, engage audiences, and driv engage innovation
-                                    through
+                                    Our awards recognize excellence, celebrating achievements, milestones, and
+                                    dedication to performance
                                 </p>
                             </div>
                         </div>
@@ -584,9 +594,8 @@
                             <img src="image copy 3.png" class="img-fluid" alt="">
                         </div>
                         <div class="text-opacity-100 me-5 mt-4" style="color: #585b6f;">
-                            <p>Repellendus autem ruibusdam et aut officiis debitis aut re necessitatibus saepe eveniet
-                                ut et
-                                repudianda sint et molestiae non recusandae.</p>
+                            <p>A group of students collaborates in a computer lab, sharing ideas, learning together, and
+                                supporting each other while working on a project.</p>
                         </div>
                     </div>
 
@@ -627,8 +636,8 @@
                             <div class="mt-5">
                                 <h5 class="fw-bold mb-4 text-dark">Managed IT Services</h5>
                                 <p class="text-secondary">
-                                    It is a long established fact that reader will be distracte readable content of a
-                                    when looking.
+                                    Managed IT services deliver expert support, monitoring, and management of technology
+                                    systems, ensuring secure, efficient, and reliable business operations.
                                 </p>
                             </div>
                             <a href="#" class="text-decoration-none fw-medium">
@@ -657,9 +666,8 @@
                             <div class="mt-5">
                                 <h5 class="fw-bold mb-4" style="color: #0a165e;">Cloud Services</h5>
                                 <p style="color: #585b6f;">
-                                    It is a long established fact that reader will be distracte readable content of
-                                    a
-                                    when looking.
+                                    Cloud services offer scalable, on-demand computing resources, enabling data storage,
+                                    applications, and collaboration with flexibility, security, and cost efficiency.
                                 </p>
                             </div>
                             <a href="#" class="text-decoration-none fw-medium">
@@ -688,9 +696,9 @@
                             <div class="mt-5">
                                 <h5 class="fw-bold mb-4" style="color: #0a165e;">Machine Learning</h5>
                                 <p style="color: #585b6f;">
-                                    It is a long established fact that reader will be distracte readable content of
-                                    a
-                                    when looking.
+                                    Machine Learning is a branch of AI where computer systems learn from data, identify
+                                    complex patterns, and make accurate predictions or intelligent decisions
+                                    automatically.
                                 </p>
                             </div>
                             <a href="#" class="text-decoration-none fw-medium">
@@ -719,9 +727,9 @@
                             <div class="mt-5">
                                 <h5 class="fw-bold mb-4" style="color: #0a165e;">Data Security</h5>
                                 <p style="color: #585b6f;">
-                                    It is a long established fact that reader will be distracte readable content of
-                                    a
-                                    when looking.
+                                    Data Security is the practice of protecting digital information from unauthorized
+                                    access, breaches, corruption, or theft, ensuring confidentiality, integrity, and
+                                    availability.
                                 </p>
                             </div>
                             <a href="#" class="text-decoration-none fw-medium">
@@ -828,8 +836,8 @@
 
                 <!-- Button -->
                 <div class="mt-5">
-                    <button class="Button lead fw-normal bg-primary text-light px-4 py-3 border-0 hover-center-slide">
-                        View Our All Works
+                    <button class="Button fw-semibold fs-5 bg-primary text-light border-0 hover-center-slide">
+                        <span>View Our All Works</span>
                     </button>
                 </div>
             </div>
@@ -853,8 +861,8 @@
                                         <!-- Social Icons -->
                                         <div
                                             class="position-absolute top-50 end-0 translate-middle-y d-flex flex-column gap-2 me-3">
-                                            <a href="#"
-                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                            <a href="https://web.facebook.com/?_rdc=1&_rdr#"
+                                                class="text-decoration-none Rounded d-flex align-items-center justify-content-center">
                                                 <!-- Facebook SVG -->
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -868,8 +876,8 @@
                                             </a>
 
                                             <!-- Linkdin -->
-                                            <a href="#"
-                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                            <a href="https://pk.linkedin.com/"
+                                                class="text-decoration-none Rounded d-flex align-items-center justify-content-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
                                                     <path
@@ -878,8 +886,8 @@
                                             </a>
 
                                             <!-- Twitter -->
-                                            <a href="#"
-                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                            <a href="https://x.com/?lang=en"
+                                                class="text-decoration-none Rounded d-flex align-items-center justify-content-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
                                                     <path
@@ -888,8 +896,8 @@
                                             </a>
 
                                             <!-- Instagram -->
-                                            <a href="#"
-                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                            <a href="https://www.instagram.com/"
+                                                class="text-decoration-none Rounded d-flex align-items-center justify-content-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                                                     <path
@@ -921,8 +929,8 @@
                                         <!-- Social Icons -->
                                         <div
                                             class="position-absolute top-50 end-0 translate-middle-y d-flex flex-column gap-2 me-3">
-                                            <a href="#"
-                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                            <a href="https://web.facebook.com/?_rdc=1&_rdr#"
+                                                class="text-decoration-none Rounded d-flex align-items-center justify-content-center">
                                                 <!-- Facebook SVG -->
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -936,8 +944,8 @@
                                             </a>
 
                                             <!-- Linkdin -->
-                                            <a href="#"
-                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                            <a href="https://pk.linkedin.com/"
+                                                class="text-decoration-none Rounded d-flex align-items-center justify-content-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
                                                     <path
@@ -946,8 +954,8 @@
                                             </a>
 
                                             <!-- Twitter -->
-                                            <a href="#"
-                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                            <a href="https://x.com/?lang=en"
+                                                class="text-decoration-none Rounded d-flex align-items-center justify-content-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
                                                     <path
@@ -956,8 +964,8 @@
                                             </a>
 
                                             <!-- Instagram -->
-                                            <a href="#"
-                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                            <a href="https://www.instagram.com/"
+                                                class="text-decoration-none Rounded d-flex align-items-center justify-content-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                                                     <path
@@ -989,8 +997,8 @@
                                         <!-- Social Icons -->
                                         <div
                                             class="position-absolute top-50 end-0 translate-middle-y d-flex flex-column gap-2 me-3">
-                                            <a href="#"
-                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                            <a href="https://web.facebook.com/?_rdc=1&_rdr#"
+                                                class="text-decoration-none Rounded d-flex align-items-center justify-content-center">
                                                 <!-- Facebook SVG -->
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -1004,8 +1012,8 @@
                                             </a>
 
                                             <!-- Linkdin -->
-                                            <a href="#"
-                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                            <a href="https://pk.linkedin.com/"
+                                                class="text-decoration-none Rounded d-flex align-items-center justify-content-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
                                                     <path
@@ -1014,8 +1022,8 @@
                                             </a>
 
                                             <!-- Twitter -->
-                                            <a href="#"
-                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                            <a href="https://x.com/?lang=en"
+                                                class="text-decoration-none Rounded d-flex align-items-center justify-content-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
                                                     <path
@@ -1024,8 +1032,8 @@
                                             </a>
 
                                             <!-- Instagram -->
-                                            <a href="#"
-                                                class="text-decoration-none rounded d-flex align-items-center justify-content-center">
+                                            <a href="https://www.instagram.com/"
+                                                class="text-decoration-none Rounded d-flex align-items-center justify-content-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                                                     <path
@@ -1118,9 +1126,11 @@
                         </div>
                         <div class="mt-5">
                             <h4 class="h4" style="color: #0a165e;">Initiation & Planning</h4>
-                            <p class="text-secondary opacity-100 lead fw-normal">We are architects innovation
-                                trailblazers of
-                                technological advancement</p>
+                            <p class="text-secondary opacity-100 lead fw-normal">Initiation & Planning involves defining
+                                clear goals, organizing tasks, and preparing resources efficiently.
+
+
+                            </p>
                         </div>
                     </div>
 
@@ -1134,9 +1144,8 @@
                         </div>
                         <div class="mt-5">
                             <h4 class="h4" style="color: #0a165e;">Execution & Development</h4>
-                            <p class="text-secondary opacity-100 lead fw-normal">We are architects innovation
-                                trailblazers of
-                                technological advancement</p>
+                            <p class="text-secondary opacity-100 lead fw-normal">Testing & Maintenance involves
+                                evaluating systems, fixing issues, and ensuring ongoing reliable performance.</p>
                         </div>
                     </div>
 
@@ -1150,9 +1159,10 @@
                         </div>
                         <div class="mt-5">
                             <h4 class="h4" style="color: #0a165e;">Testing & Maintenance</h4>
-                            <p class="text-secondary opacity-100 fw-normal lead">We are architects innovation
-                                trailblazers of
-                                technological advancement</p>
+                            <p class="text-secondary opacity-100 fw-normal lead">Testing & Maintenance involves
+                                evaluating systems, fixing issues, ensuring reliable ongoing performance.
+
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1521,8 +1531,10 @@
                                     What Our Clients Say About Us
                                 </h1>
                                 <p class="lead fw-normal mt-4" style="color: darkslategrey;">
-                                    Each demo built with Teba will look different. You can customize almost anything
-                                    in the appearance of your website.
+                                    “What Our Clients Say About Us” showcases authentic feedback, experiences, and
+                                    satisfaction levels, reflecting trust, quality service, and successful client
+                                    relationships consistently.
+
                                 </p>
                             </div>
 
@@ -1964,12 +1976,12 @@
 
             <!-- Footer Section -->
             <section>
-                <div class="container text-light pt-3">
+                <div class="container pt-3">
                     <div class="row align-items-center">
 
                         <!-- Left Side -->
                         <div class="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
-                            <span class="fw-normal">
+                            <span class="fw-normal text-light">
                                 © 2025
                                 <a href="#" class="text-decoration-none fw-normal">Alpha Soft</a>
                                 All Rights Reserved, Created by
@@ -1982,10 +1994,11 @@
                             <div class="d-flex justify-content-center justify-content-md-end gap-2">
 
                                 <!-- Facebook -->
-                                <a href="#"
-                                    class="arrow-btn btn btn-light Button align-items-center justify-content-center">
+                                <a href="https://web.facebook.com/?_rdc=1&_rdr#"
+                                    class="arrow-btn text-decoration-none rounded align-items-center justify-content-center"
+                                    style="width: 40px; height: 40px;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                        class="bi bi-facebook" viewBox="0 0 16 16">
+                                        class="bi bi-facebook" viewBox="0 0 16 16" fill="currentColor">
                                         <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 
                                                 3.603-.002 8.05c0 4.017 2.926 7.347 
                                                 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
@@ -1997,10 +2010,11 @@
                                 </a>
 
                                 <!-- LinkedIn -->
-                                <a href="#" class="bg-light arrow-btn Button align-items-center justify-content-center"
-                                    style="color: #0a165e;">
+                                <a href="https://pk.linkedin.com/"
+                                    class="arrow-btn rounded text-decoration-none align-items-center justify-content-center"
+                                    style="width: 40px; height: 40px;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        class="bi bi-linkedin" viewBox="0 0 16 16" fill="currentColor">
                                         <path d="M0 1.146C0 .513.526 0 1.175 
                                                 0h13.65C15.474 0 16 .513 16 
                                                 1.146v13.708c0 .633-.526 1.146-1.175 
@@ -2017,12 +2031,13 @@
                                 </a>
 
                                 <!-- Twitter -->
-                                <a href="#" class="bg-light arrow-btn Button align-items-center justify-content-center"
-                                    style="color: #0a165e;">
+                                <a href="https://x.com/?lang=en"
+                                    class="arrow-btn rounded text-decoration-none d-flex align-items-center justify-content-center"
+                                    style="width: 40px; height: 40px;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bi bi-twitter"
-                                        viewBox="0 0 16 16">
-                                        <path d="M5.026 15c6.038 0 9.341-5.003 
-                                                9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 
+                                        viewBox="0 0 16 16" fill="currentColor">
+                                        <path d="M5.026 15c6.038 0 9.341-5.003
+                                            9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 
                                                 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 
                                                 0 0 0 1.447-1.817 6.5 6.5 0 0 
                                                 1-2.087.793A3.286 3.286 0 0 0 7.875 
@@ -2037,10 +2052,11 @@
                                 </a>
 
                                 <!-- Instagram -->
-                                <a href="#" class="bg-light arrow-btn Button align-items-center justify-content-center"
-                                    style="color: #0a165e;">
+                                <a href="https://www.instagram.com/"
+                                    class="arrow-btn text-decoration-none rounded align-items-center justify-content-center"
+                                    style="width: 40px; height: 40px;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                        class="bi bi-instagram" viewBox="0 0 16 16">
+                                        class="bi bi-instagram" viewBox="0 0 16 16" fill="currentColor">
                                         <path d="M8 0C5.829 0 5.556.01 
                                                 4.703.048 3.85.088 3.269.222 
                                                 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 
@@ -2074,7 +2090,6 @@
                                                 2.667 2.667 0 0 1 0-5.334" />
                                     </svg>
                                 </a>
-
                             </div>
                         </div>
                     </div>
