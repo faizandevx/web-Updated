@@ -16,6 +16,16 @@ for (let i = 0; i < thumbs.length; i++) {
     });
 }
 
-
-
 console.log("Loaded");
+
+//  Script to Toggle Toast 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const searchBtn = document.getElementById("searchBtn");
+    const searchToastEl = document.getElementById("searchToast");
+    const searchToast = new bootstrap.Toast(searchToastEl);
+
+    searchBtn.addEventListener("click", function () {
+        searchToast.show();
+    });
+});

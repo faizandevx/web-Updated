@@ -35,6 +35,9 @@
     z-index: 0;
 }
 
+.no-ratio-carousel {
+    position: relative;
+}
 
 .svg-color {
     color: #fff;
