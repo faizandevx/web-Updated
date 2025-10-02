@@ -1,6 +1,6 @@
 .text-color {
     color: #585b6f;
-    background-color: #eff0f0;
+    /* background-color: #eff0f0; */
 }
 
 .text-color:hover {
@@ -49,11 +49,11 @@
     color: #fff !important;
 }
 
-.bg-text-color {
+.nav-text-color {
     color: #0a165e !important;
 }
 
-.bg-text-color:hover {
+.nav-text-color:hover {
     color: #2b4dff !important;
 }
 
