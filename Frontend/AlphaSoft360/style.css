@@ -30,14 +30,44 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     /* Dark overlay, adjust opacity as needed */
     z-index: 0;
 }
 
-.no-ratio-carousel {
-    position: relative;
+/* Small screens (default) */
+.carousel-background {
+    height: 650px;
+    /* mobile height */
+    /* overflow: hidden; */
 }
+
+.carousel-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* scale & crop image */
+}
+
+/* Medium screens (≥768px) */
+@media (min-width: 768px) {
+    .carousel-background {
+        height: 550px;
+        /* tablet height */
+    }
+}
+
+/* Large screens (≥992px) */
+@media (min-width: 992px) {
+    .carousel-background {
+        height: 750px;
+        /* desktop height */
+    }
+}
+
+/* .no-ratio-carousel {
+    position: relative;
+} */
 
 .svg-color {
     color: #fff;
@@ -261,131 +291,107 @@
     }
 }
 
-/* ---------- Hover-dropdown: desktop-only, minimal & safe ---------- */
-/* change breakpoint if your navbar expands at a different width */
+/* For large screens */
 @media (min-width: 992px) {
 
-    /* allow menus to escape parent if parent had overflow hidden */
-    .navbar-expand-lg {
-        overflow: visible;
-        /* prevents clipping of absolute-positioned dropdowns */
+    /* Dropdown parent */
+    .navbar-nav.flex-row .dropdown {
+        position: relative;
     }
 
-    /* initial hidden state (keeps bootstrap behaviour intact on small screens) */
-    .navbar-expand-lg .dropdown>.dropdown-menu {
+    /* Dropdown menu */
+    .navbar-nav.flex-row .dropdown>.dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 220px;
         opacity: 0;
         visibility: hidden;
-        transform: translateY(.25rem);
+        transform: translateY(10px);
         transition: transform .15s ease, opacity .15s ease, visibility .15s;
         z-index: 2000;
-        /* make sure it's above other content */
-        margin-top: 0;
-        /* remove any gap causing flicker */
+        margin: 0;
+        padding: 0;
+        /* background-color: #fff; */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        display: block;
     }
 
-    /* show on hover */
-    .navbar-expand-lg .dropdown:hover>.dropdown-menu,
-    .navbar-expand-lg .dropdown:focus-within>.dropdown-menu {
-        display: block;
-        /* ensure it's rendered (bootstrap sometimes uses .show) */
+    /* Show dropdown on hover */
+    .navbar-nav.flex-row .dropdown:hover>.dropdown-menu,
+    .navbar-nav.flex-row .dropdown:focus-within>.dropdown-menu {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
     }
 
-    /* keep dropdown link visual feedback (caret rotation if present) */
-    .navbar-expand-lg .dropdown:hover>.nav-link::after,
-    .navbar-expand-lg .dropdown:focus-within>.nav-link::after {
+    /* Dropdown items */
+    .navbar-nav.flex-row .dropdown-menu .dropdown-item {
+        position: relative;
+        padding: 0.5rem 1.5rem;
+        width: 100%;
+        color: #0a165e;
+        transition: color 0.3s ease;
+    }
+
+    /* Line at start on hover */
+    .navbar-nav.flex-row .dropdown-menu .dropdown-item::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        /* transform: translateY(-50%); */
+        height: 2px;
+        /* line thickness */
+        width: 0;
+        background-color: #0a165e;
+        /* line color */
+        transition: width 0.4s ease;
+    }
+
+    .navbar-nav.flex-row .dropdown-menu .dropdown-item:hover::before {
+        width: 20px;
+        /* line length on hover */
+    }
+
+    /* Optional: rotate arrow for parent link */
+    .navbar-nav.flex-row .dropdown:hover>.nav-link::after,
+    .navbar-nav.flex-row .dropdown:focus-within>.nav-link::after {
         transform: rotate(180deg);
         transition: transform .15s ease;
     }
+
+    /* Line for main nav links on hover */
+    .navbar-nav.flex-row .nav-link.position-relative::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        /* or adjust top/bottom depending on design */
+        height: 2px;
+        width: 0;
+        /* background-color: #0d6efd; */
+        transition: width 0.3s ease;
+    }
+
+    .navbar-nav.flex-row .nav-link.position-relative:hover::before {
+        width: 20px;
+    }
 }
 
-/* On small screens keep bootstrap's click behavior intact */
+/* Small screens remain unchanged */
 @media (max-width: 991.98px) {
-    .navbar-expand-lg .dropdown>.dropdown-menu {
-        /* let Bootstrap's JavaScript (click) control the visibility on mobile */
+    .navbar-nav.flex-row .dropdown>.dropdown-menu {
+        position: static;
+        transform: none;
         opacity: 1;
         visibility: visible;
-        transform: none;
+        padding: 0;
+        width: 100%;
+        box-shadow: none;
     }
 }
-
-@media (min-width: 992px) {
-
-    /* Show dropdown on hover */
-    .navbar-expand-lg .dropdown:hover>.dropdown-menu {
-        display: block;
-    }
-
-    /* Enlarge hover zone below link */
-    .navbar-expand-lg .dropdown {
-        position: relative;
-        padding-bottom: 1rem;
-        /* increases the hover area */
-    }
-
-    .navbar-expand-lg .dropdown-menu {
-        margin-top: 0;
-    }
-}
-
-/* Dropdown style */
-/* Dropdown menu */
-.custom-dropdown {
-    width: 300px;
-    padding: 10px 0;
-}
-
-/* Dropdown item base */
-.custom-item {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 8px 20px;
-    color: var(--brand-color) !important;
-    font-weight: 500;
-    background-color: transparent !important;
-    /* Prevent Bootstrap background */
-    transition: padding-left 0.3s ease-in-out, font-weight 0.3s ease-in-out;
-    /* transform: rotateX('180deg'); */
-}
-
-/* Remove Bootstrap blue hover */
-.custom-item:hover,
-.custom-item:focus,
-.custom-item:active {
-    background-color: transparent !important;
-    color: var(--brand-color) !important;
-}
-
-/* Line before text */
-.custom-item::before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 2px;
-    width: 0;
-    opacity: 0;
-    background-color: var(--brand-color);
-    transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-}
-
-/* Hover effect */
-.custom-item:hover {
-    padding-left: 30px;
-    font-weight: 600;
-    transform: rotateX('180deg');
-}
-
-.custom-item:hover::before {
-    width: 15px;
-    opacity: 1;
-    transform: rotateX('180deg');
-}
-
 
 .project-card {
     position: relative;
