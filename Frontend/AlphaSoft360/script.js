@@ -20,3 +20,16 @@ console.log("Loaded");
 
 
 
+
+const mainNavbar = document.getElementById('mainNavbar');
+const carousel = document.getElementById('mainCarousel');
+
+window.addEventListener('scroll', () => {
+    const carouselBottom = carousel.offsetTop + carousel.offsetHeight;
+    if (window.scrollY >= carouselBottom) {
+        mainNavbar.classList.add('fixed');
+    } else {
+        mainNavbar.classList.remove('fixed');
+    }
+});
+

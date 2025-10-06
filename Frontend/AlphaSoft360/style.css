@@ -80,16 +80,34 @@
 }
 
 .nav-text-color {
-    color: #fff !important;
+    color: #0a165e !important;
 }
 
 .nav-text-color:hover {
     color: #2b4dff !important;
 }
 
+.offcanva {
+    color: #fff !important;
+}
+
+.offcanva:hover {
+    color: #2b4dff !important;
+}
+
 :root {
     --brand-color: #0a165e;
 }
+
+#mainNavbar.fixed {
+    position: fixed;
+    top: 56px;
+    /* height of top navbar */
+    width: 100%;
+    z-index: 1020;
+    transition: all 0.3s ease;
+}
+
 
 /* Logo wrapper */
 .svg-wrapper {
@@ -239,14 +257,6 @@
 }
 
 .headings:hover {
-    color: #2b4dff;
-}
-
-.color {
-    color: #fff;
-}
-
-.color:hover {
     color: #2b4dff;
 }
 
