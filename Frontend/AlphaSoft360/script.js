@@ -20,20 +20,3 @@ console.log("Loaded");
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const navbar = document.getElementById('scrollNavbar');
-    if (!navbar) return;
-
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 0) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-
-    // Trigger on page load if already scrolled
-    if (window.scrollY > 0) {
-        navbar.classList.add('scrolled');
-    }
-});
