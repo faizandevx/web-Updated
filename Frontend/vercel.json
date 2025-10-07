@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "Frontend/AlphaSoft360/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "Frontend/AlphaSoft360/$1"
+    }
+  ]
+}
